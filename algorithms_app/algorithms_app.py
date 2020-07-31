@@ -25,4 +25,20 @@ def prompt():
 		else:
 			print("Try again\n")
 
+# Algorithm Design, Keinberg & Tardos: 13.5 Randomized Divide and Conquer: Median-Finding and Quicksort
+def select(S,k):
+	s_minus = []
+	s_plus = []
+	split = random.choice(range(1,len(S)))-1
+	for i in S:
+		if i < S[split]:
+			s_minus.append(i)
+		elif i > S[split]:
+			s_plus.append(i)
+		
+	if len(s_minus) == k-1:
+		return(S[split])
+	elif len(s_minus) >= k:
+		select(s_minus,k)
+
 main()
