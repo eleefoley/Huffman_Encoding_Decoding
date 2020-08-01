@@ -28,20 +28,44 @@ def prompt():
 			print("Try again\n")
 
 # Algorithm Design, Keinberg & Tardos: 13.5 Randomized Divide and Conquer: Median-Finding and Quicksort
-def select(S,k):
-	s_minus = []
-	s_plus = []
-	split = random.choice(range(1,len(S)))-1
-	for i in S:
-		if i < S[split]:
-			s_minus.append(i)
-		elif i > S[split]:
-			s_plus.append(i)
-		
-	if len(s_minus) == k-1:
-		return(S[split])
-	elif len(s_minus) >= k:
-		select(s_minus,k)
+def splitter(S):
+    if len(S) == 1:
+        split = S[0]
+    else:
+        split = random.choice(S)
+    return split
+
+def select(S,k, splitter):
+        if len(S) == 0:
+            return []
+        if len(S) == 1:
+            return S[0]
+        
+        s_minus = []
+        s_plus = []
+        test_median = splitter(S)
+        print("The test median is: " + str(test_median))
+        for i in S:
+            if i < test_median:
+                s_minus.append(i)
+            elif i > test_median:
+                s_plus.append(i)
+
+        if len(s_minus) == k - 1:
+#             print("condition one")
+#             print("The kth element is: " + str(test_median))
+            return test_median
+        elif len(s_minus) >= k:
+#             print("condition two")
+            if len(s_minus) == 0:
+                return test_median
+            else:
+                test_median = select(s_minus,k,splitter)
+                return test_median
+        else:
+#             print("condition three")
+            test_median = select(s_plus, k - 1 - len(s_plus), splitter)
+            return test_median
 
 ##########################functions used for testing#############3
 # given a lenght, generate a random 
@@ -62,8 +86,7 @@ def test_select():
     			k = len(unsorted_list)/2 + 1
 		else:
     			k = len(unsorted_list) / 2 + .5
-			print(k)
-		my_median = select(unsorted_list, k)
+		my_median = select(unsorted_list, k, splitter)
 		true_median = median(unsorted_list)
 		if my_median != true_median:
 			print("	select function failed to find the median for array " + str(unsorted_list) + "\n")
