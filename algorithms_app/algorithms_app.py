@@ -43,15 +43,17 @@ def select(S,k, splitter):
         
         s_minus = []
         s_plus = []
+        s_equal = []
         test_median = splitter(S)
-        print("The test median is: " + str(test_median))
+#        print("The test median is: " + str(test_median))
         for i in S:
             if i < test_median:
                 s_minus.append(i)
             elif i > test_median:
                 s_plus.append(i)
-
-        if len(s_minus) == k - 1:
+            elif i == test_median:
+                s_equal.append(i)	
+        if len(s_minus) == k - len(s_equal):
 #             print("condition one")
 #             print("The kth element is: " + str(test_median))
             return test_median
@@ -64,35 +66,39 @@ def select(S,k, splitter):
                 return test_median
         else:
 #             print("condition three")
-            test_median = select(s_plus, k - 1 - len(s_plus), splitter)
+            test_median = select(s_plus, k - len(s_equal) - len(s_plus), splitter)
             return test_median
 
 ##########################functions used for testing#############3
 # given a lenght, generate a random 
-def random_unsorted_list(n):
+def random_unsorted_list(n, max_val):
 	test_list = []
 	for i in range(n):
-		test_list.append(random.choice(range(1,100)))
+		test_list.append(random.choice(range(2,max_val)))
+	print(test_list)
 	return test_list
 
 
 # test the select function for randomized median finding
 def test_select():
 	print("testing select function for randomized median finding")
-	for i in range(3,8,2):
-		unsorted_list = random_unsorted_list(i)
-		unsorted_list = [83, 53, 38, 44, 51, 52]
-		if len(unsorted_list) % 2 != 0:
-    			k = len(unsorted_list)/2 + 1
-		else:
-    			k = len(unsorted_list) / 2 + .5
-		my_median = select(unsorted_list, k, splitter)
-		true_median = median(unsorted_list)
-		if my_median != true_median:
-			print("	select function failed to find the median for array " + str(unsorted_list) + "\n")
-			print(str(k) + " != " + str(true_median))
+	for i in random_unsorted_list(5,10):
+		unsorted_list = random_unsorted_list(i,100)
+		if(len(unsorted_list) % 2 == 0):
+			print('even')
+		k =  random.choice(range(1,i-1))
+		print(k)
+		my_kth = select(unsorted_list, k, splitter)
+		
+		sorted_list = list(unsorted_list)
+		sorted_list.sort()
+		true_kth = sorted_list[k-1]
+		
+		if my_kth != true_kth:
+			print("	select function failed to find the kth element  for array " + str(unsorted_list) + "\n")
+			print(str(my_kth) + " != " + str(true_kth))
 			return False
-	print("	select function successfully finds the median")
+	print("	select function successfully finds the kth element")
 	return True
 		
 # run all the tests, returning True if they pass, Fail if they do not
