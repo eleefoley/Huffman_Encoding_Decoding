@@ -10,6 +10,7 @@ def main ():
 def prompt():
 	print("Welcome to the CS 430 summer project!")
 	done = False
+	print_mode = False
 	while(done == False):
 		response = input("""Type the letter for what you would like to do:
 			a:  Run in test mode
@@ -23,51 +24,56 @@ def prompt():
 			run_tests()
 			done = True
 		elif(response == 'b'):
+			print_mode = True
 			done = True
 		else:
 			print("Try again\n")
 
 # Algorithm Design, Keinberg & Tardos: 13.5 Randomized Divide and Conquer: Median-Finding and Quicksort
-def splitter(S):
-    if len(S) == 1:
-        split = S[0]
-    else:
-        split = random.choice(S)
-    return split
 
-def select(S,k, splitter):
-        if len(S) == 0:
-            return []
-        if len(S) == 1:
-            return S[0]
-        
-        s_minus = []
-        s_plus = []
-        s_equal = []
-        test_median = splitter(S)
-#        print("The test median is: " + str(test_median))
-        for i in S:
-            if i < test_median:
-                s_minus.append(i)
-            elif i > test_median:
-                s_plus.append(i)
-            elif i == test_median:
-                s_equal.append(i)	
-        if len(s_minus) == k - len(s_equal):
-#             print("condition one")
-#             print("The kth element is: " + str(test_median))
-            return test_median
-        elif len(s_minus) >= k:
-#             print("condition two")
-            if len(s_minus) == 0:
-                return test_median
-            else:
-                test_median = select(s_minus,k,splitter)
-                return test_median
-        else:
-#             print("condition three")
-            test_median = select(s_plus, k - len(s_equal) - len(s_plus), splitter)
-            return test_median
+
+# split = unsorted_list[0]
+def select(S,k, print_mode): 
+	if print_mode == True:
+		print("We're looking for the " + str(k) +"th element of " + str(S))
+    
+	if len(S) == 1:
+#         assert k == 0
+		return S[0]
+    
+	if len(S) > 1 and all(element == S[0] for element in S):
+		return S[0]
+    
+	split = random.choice(S)
+	if print_mode == True:
+		print("     We choose a random element to compare the others against, " + str(split))
+	s_minus = []
+	s_plus = []
+	s_equal = []
+    
+	for i in S:
+		if i < split:
+			s_minus.append(i)
+		elif i > split:
+			s_plus.append(i)
+		elif i == split:
+ 			s_equal.append(i)
+    
+	l = len(s_minus)
+
+	if l >= k:
+		if print_mode == True:
+			print("     There are more than " + str(k) + " smaller values, so let's look inside that sub-list, s_minus")
+		return select(s_minus, k, print_mode)
+	elif l >= k - len(s_equal):
+		if print_mode == True:
+			print("     There are " + str(l) + " smaller values, so it is the one we're looking for")
+		return split
+	else:
+		if print_mode == True:
+			print("     There are than " + str(len(s_plus)) + " larger values, so let's look inside the other sub-list, s_plus")
+		return select(s_plus,k-l-len(s_equal), print_mode)
+
 
 ##########################functions used for testing#############3
 # given a lenght, generate a random 
@@ -75,29 +81,24 @@ def random_unsorted_list(n, max_val):
 	test_list = []
 	for i in range(n):
 		test_list.append(random.choice(range(2,max_val)))
-	print(test_list)
+	#print(test_list)
 	return test_list
 
 
 # test the select function for randomized median finding
 def test_select():
-	print("testing select function for randomized median finding")
-	for i in random_unsorted_list(5,10):
+	print("1. testing select function for randomized median finding against the result of the python builtin sort for lists and lookup by index")
+	for i in range(1,15):
 		unsorted_list = random_unsorted_list(i,100)
-		if(len(unsorted_list) % 2 == 0):
-			print('even')
-		k =  random.choice(range(1,i-1))
-		print(k)
-		my_kth = select(unsorted_list, k, splitter)
-		
 		sorted_list = list(unsorted_list)
 		sorted_list.sort()
-		true_kth = sorted_list[k-1]
-		
-		if my_kth != true_kth:
-			print("	select function failed to find the kth element  for array " + str(unsorted_list) + "\n")
-			print(str(my_kth) + " != " + str(true_kth))
-			return False
+		for i in range(1,len(unsorted_list)):
+			my_kth = select(unsorted_list, i,print_mode = False)
+			true_kth = sorted_list[i-1]
+			if(my_kth != true_kth):
+				print("	select function failed to find the kth element  for array " + str(unsorted_list) + "\n")
+				print(str(my_kth) + " != " + str(true_kth))
+				return False
 	print("	select function successfully finds the kth element")
 	return True
 		
