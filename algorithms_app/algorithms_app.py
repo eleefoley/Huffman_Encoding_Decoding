@@ -159,12 +159,38 @@ def test_select():
 				return False
 	print("	select function successfully finds the kth element")
 	return True
+
+# test the quicksort function for quicksorting using randomized median finding to smartly pick the pivot
+def test_quicksort():
+	print("2. Testing the quicksort function for quicksorting using our kth element selector to smartly pick our pivot element, comparing the results to the builtin python list sort")
+	for i in range(1,15):
+		unsorted_list = random_unsorted_list(i,100)
+		sorted_list = list(unsorted_list)
+		sorted_list.sort()
 		
+		my_sorted_list = quicksort(unsorted_list, False)
+		
+		if(sorted_list != my_sorted_list):
+			print("  quicksort function failed to sort " + str(unsorted_list))
+			print("  " + str(my_sorted_list) + " != " + str(sorted_list))
+			return False
+
+		print("  quicksort function successfully sorts lists")	
+		return True
+	
 # run all the tests, returning True if they pass, Fail if they do not
 def run_tests():
 	print("Running tests")
+
+	test_results = []
+
 	select = test_select()
-	if(select == False):
+	test_results.append(select)
+
+	quicksort = test_quicksort()
+	test_results.append(quicksort)
+
+	if(False in test_results):
 		print("	Failed one or more tests")
 	else:
 		print("	All tests passed")
