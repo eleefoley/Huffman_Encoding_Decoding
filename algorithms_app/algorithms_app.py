@@ -6,6 +6,7 @@ from statistics import median
 def main ():
 	prompt()
 
+#####################ui functions###################
 # input from the user to determine which function(s) to go through
 def prompt():
 	print("Welcome to the CS 430 summer project!")
@@ -29,6 +30,22 @@ def prompt():
 		else:
 			print("Try again\n")
 
+#get a manually entered list from a user
+def user_entered_list():
+    type_correct = False
+    while type_correct == False:
+        try:
+            response = input("Type in a list of integer values, separated by commas like this: '1,2,3,4' ")
+    #         response = tuple(response)
+            unsorted_list = list(response)
+            if all(isinstance(item, int) for item in unsorted_list) == True:
+                type_correct = True
+        except Exception as error:
+            print(error)
+    print("You entered: " + str(unsorted_list))
+    return unsorted_list
+
+######################random median finding functions######################333
 ###### Algorithm Design, Keinberg & Tardos: 13.5 Randomized Divide and Conquer: Median-Finding and Quicksort
 # split = unsorted_list[0]
 def select(S,k, print_mode): 
@@ -72,7 +89,6 @@ def select(S,k, print_mode):
 			print("     There are than " + str(len(s_plus)) + " larger values, so let's look inside the other sub-list, s_plus")
 		return select(s_plus,k-l-len(s_equal), print_mode)
 
-
 def quicksort(S,print_mode):
     if print_mode == True:
         print("We're using the result of our randomized median function to help us recursively sort the list " + str(S))
@@ -114,10 +130,10 @@ def quicksort(S,print_mode):
             
         if print_mode == True:
             print("    Recursively use this sorting method on any values less than " + str(split))
-        s_minus = Quicksort(s_minus, print_mode)
+        s_minus = quicksort(s_minus, print_mode)
         if print_mode == True:
             print("    Recursively use this sorting method on any values greater than " + str(split))
-        s_plus = Quicksort(s_plus, print_mode)
+        s_plus = quicksort(s_plus, print_mode)
         
 #         print(s_minus)
 #         print(s_plus)
