@@ -26,18 +26,86 @@ def prompt():
 			done = True
 		elif(response == 'b'):
 			print_mode = True
+			user_choose_a_function(print_mode)
 			done = True
 		else:
 			print("Try again\n")
+			done = True
+
+def user_manual_or_random():
+    print("Random or Manual Mode")
+    done = False
+#     print_mode = False
+    while(done == False):
+            response = str()
+            try:
+                response = str(input("""Choose whether you want to enter a list manually or have one randomly generated:
+                        a:  Random
+                        b:  Manual
+                        c:  Exit the program
+                """)).strip()
+            except Exception as error:
+                print(error)
+            if(response == 'c'):
+                    exit()
+                    done = True
+            elif(response == 'a'):
+                    n = user_random_list_params()
+                    unsorted_list = random_unsorted_list(n,100)
+                    return unsorted_list
+                    done = True
+            elif(response == 'b'):
+                    unsorted_list = user_entered_list()
+                    return unsorted_list
+                    done = True
+            else:
+                    print("Try again\n")
+                    done = True
+  
+def user_choose_a_function(print_mode):
+    print("Choose a function")
+    done = False
+    print_mode = True
+    while(done == False):
+            response = str()
+            try:
+                response = str(input("""Choose a function to run:
+                    a:  Find the kth element of a list
+                    b:  Sort a list
+                    c:  Exit the program
+            """)).strip()
+            except Exception as error:
+                print(error)
+            if(response == 'c'):
+                    exit()
+                    done = True
+            elif(response == 'a'):
+                    unsorted_list = user_manual_or_random()
+                    k = user_choose_k(len(unsorted_list))
+                    print("Run that function")
+                    print(select(unsorted_list,k,print_mode))
+                    done = True
+            elif(response == 'b'):
+                    unsorted_list = user_manual_or_random()
+                    print("Run that function")
+                    print(quicksort(unsorted_list,print_mode))
+                    done = True
+            else:
+                    print("Try again\n")
+                    done = True
+  
 
 #get a manually entered list from a user
 def user_entered_list():
     type_correct = False
     while type_correct == False:
         try:
-            response = input("Type in a list of integer values, separated by commas like this: '1,2,3,4' ")
+            response = str(input("Type in a list of integer values, separated by commas like this: '1,2,3,4' ")).replace(" ","")
     #         response = tuple(response)
-            unsorted_list = list(response)
+            print(response)
+            unsorted_list = response.split(",")
+            for i, item in enumerate(unsorted_list):
+                unsorted_list[i] = int(item)
             if all(isinstance(item, int) for item in unsorted_list) == True:
                 type_correct = True
         except Exception as error:
@@ -45,6 +113,34 @@ def user_entered_list():
     print("You entered: " + str(unsorted_list))
     return unsorted_list
 
+def user_random_list_params():
+    type_correct = False
+    while type_correct == False:
+        try:
+            response = input("Type the desired length of your list (an integer): ")
+#             print(response)
+#             print(type(response))
+            n = int(response)
+            type_correct = True
+        except Exception as error:
+            print(error)
+    print("Let's generate a list of length: " + str(n))
+    return n
+
+def user_choose_k(n):
+    type_correct = False
+    while type_correct == False:
+        try:
+            response = str(input("Choose which element between 1 and the length of your list you'd like to find. (0 for the minimum, n for the maximum): ")).replace(" ","")
+#             print(response)
+#             print(type(response))
+            k = int(response)
+            if k in range(1,n):
+                type_correct = True
+        except Exception as error:
+            print(error)
+    print("You've selected to look for the " + str(k) + "th element")
+    return k
 ######################random median finding functions######################333
 ###### Algorithm Design, Keinberg & Tardos: 13.5 Randomized Divide and Conquer: Median-Finding and Quicksort
 # split = unsorted_list[0]
@@ -95,10 +191,12 @@ def quicksort(S,print_mode):
     n = len(S)
 #     print(n)
     if n == 1:
+        if print_mode == True:
+            print("    The list is only one element long, so no need to sort")
         return S
     elif n <= 3:
         if print_mode == True:
-            print("    The list is only one element long, so no need to sort")
+            print("    The list is less than three elements long, so we'll sort using the minimums")
         temp_1 = []
         temp_2 = list(S)
 #         print temp_2
