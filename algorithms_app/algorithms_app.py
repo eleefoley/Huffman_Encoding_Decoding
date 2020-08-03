@@ -311,7 +311,7 @@ class Node(object):
 
 def textfile_to_str():
         file_name = 'pride_and_prejudice_ch_1.txt'
-        file_to_open = Path("text/" + file_name)
+        file_to_open = Path("./algorithms_app/text/" + file_name)
         print("Opening the file to read in characters")
 
         data = str()
