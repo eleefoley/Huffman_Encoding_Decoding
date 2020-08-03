@@ -10,9 +10,10 @@ Run 'make' in the top level directory, Huffman_Encoding_Decoding
 About
 ======
 This program focuses on three areas:
-1. Identifing the kth largest element in a list, using random selection and recursion
-2. Sorting an unsorted list
-3. Huffman encoding (incomplete)
+
+#. Identifing the kth largest element in a list, using random selection and recursion
+#. Sorting an unsorted list
+#. Huffman encoding (incomplete)
 
 This is a terminal program, where users will be prompted to make selections and enter values.  For ease, there is the option of randomly generating lists as needed and running the program in 'test mode'
 
