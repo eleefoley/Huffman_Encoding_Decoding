@@ -1,5 +1,2 @@
-init:
-	pip install -r requirements.txt
-
-test:
-	nosetests tests
+run:
+	python algorithms_app/algorithms_app.py
