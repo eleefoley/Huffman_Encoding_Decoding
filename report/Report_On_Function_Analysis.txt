@@ -1,0 +1,25 @@
+CS 430 Summer 2020
+Final Project
+Emma Foley, A20290331
+
+Randomized Median Finding
+========================
+Per the discussions in class and pages 730-731 of Algorithm Design, the running time of this function is O(n).
+
+We assume that comparing a value takes constant time and that the print statements do not contribute meaninfully to the time.
+
+On each iteration, we are checking a smaller and smaller algorith.  Kleinber & Tardos make the assumption that it is about (3/4)^i of n for each iteration.  As i approaches infinity, this sum converges to 4, a constant multplied by n.
+
+Quicksort
+=========
+Quicksort inherits most of its runtime from the median finding.  As we recursively split and sort the s_plus and s_minus subarrays, we can recall other examples where such binary splits produced a running time of O(log(n)).  Taken together, quicksort has a runtime of O(n*log(n))
+
+Huffman
+=======
+
+Encoding
+--------
+
+Decoding
+--------
+

@@ -20,7 +20,7 @@ At this time, 'test mode' only checks part 1&2, comparing the results against th
 
 Python
 ======
-This was written in a virtual environment in python 3.5.2
+This was written in a python virtual environment, running python 3.5.2
 
 The required packages are included in the requirements.txt and can be imported via:
 	'pip install -r requirements.txt'
