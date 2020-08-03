@@ -1,6 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
+class Node()
 def main():
 	data = textfile_to_str()
 	count_df = str_to_count_df(data)
