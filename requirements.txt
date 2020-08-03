@@ -21,9 +21,12 @@ mistune==0.8.4
 nbconvert==5.6.1
 nbformat==5.0.7
 notebook==6.0.3
+numpy==1.18.5
 packaging==20.4
+pandas==0.24.2
 pandocfilters==1.4.2
 parso==0.7.1
+pathlib==1.0.1
 pexpect==4.8.0
 pickleshare==0.7.5
 pkg-resources==0.0.0
@@ -34,6 +37,7 @@ Pygments==2.6.1
 pyparsing==2.4.7
 pyrsistent==0.16.0
 python-dateutil==2.8.1
+pytz==2020.1
 pyzmq==19.0.1
 qtconsole==4.7.5
 QtPy==1.9.0
