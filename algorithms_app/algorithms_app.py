@@ -491,38 +491,61 @@ def random_unsorted_list(n, max_val):
 
 # test the select function for randomized median finding
 def test_select():
-	print("1. testing select function for randomized median finding against the result of the python builtin sort for lists and lookup by index")
+	log_message(break_message, False)
+	log_message("Run the program in test mode, running functions on random values as needed and comparing to python built in results")
+	message = "1. testing select function for randomized median finding against the result of the python builtin sort for lists and lookup by index"
+	log_message(message)
+	print(message)
 	for i in range(1,15):
+		log_message("\nTest 1 " + str(i), False)
 		unsorted_list = random_unsorted_list(i,100)
 		sorted_list = list(unsorted_list)
 		sorted_list.sort()
 		for i in range(1,len(unsorted_list)):
 			my_kth = select(unsorted_list, i,print_mode = False)
 			true_kth = sorted_list[i-1]
+			log_message("The built in python sort and list indexing found: " + str(true_kth))
 			if(my_kth != true_kth):
-				print("	select function failed to find the kth element  for array " + str(unsorted_list) + "\n")
+				print("select function failed to find the kth element  for array " + str(unsorted_list) + "\n", False)
 				print(str(my_kth) + " != " + str(true_kth))
+				
+				log_message("select function failed to find the kth element  for array " + str(unsorted_list) + "\n", False)
+				log_message(str(my_kth) + " != " + str(true_kth), False)
+				
+				log_message("!!!FAIL!!!", False)
 				return False
-	print("	select function successfully finds the kth element")
+	message = "	select function successfully finds the kth element"
+	print(message)
+	log_message(message, False)
+	log_message("!!!PASS!!!")
 	return True
 
 # test the quicksort function for quicksorting using randomized median finding to smartly pick the pivot
 def test_quicksort():
-	print("2. Testing the quicksort function for quicksorting using our kth element selector to smartly pick our pivot element, comparing the results to the builtin python list sort")
+	message = "2. Testing the quicksort function for quicksorting using our kth element selector to smartly pick our pivot element, comparing the results to the builtin python list sort"
+	print(message)
+	log_message(message)
 	for i in range(1,15):
+		log_message("\nTest 2 " + str(i), False)
 		unsorted_list = random_unsorted_list(i,100)
 		sorted_list = list(unsorted_list)
 		sorted_list.sort()
 		
 		my_sorted_list = quicksort(unsorted_list, False)
 		
+		log_message("The built in python sort function returned: " + str(sorted_list), False)
 		if(sorted_list != my_sorted_list):
 			print("  quicksort function failed to sort " + str(unsorted_list))
 			print("  " + str(my_sorted_list) + " != " + str(sorted_list))
+			log_message("  quicksort function failed to sort " + str(unsorted_list), False)
+			log_message("  " + str(my_sorted_list) + " != " + str(sorted_list), False)
 			return False
 
-		print("  quicksort function successfully sorts lists")	
-		return True
+	message = "  quicksort function successfully sorts lists"
+	print(message)
+	log_message(message, False)
+	log_message("!!!PASS!!!")
+	return True
 	
 # run all the tests, returning True if they pass, Fail if they do not
 def run_tests():
@@ -537,7 +560,9 @@ def run_tests():
 	test_results.append(quicksort)
 
 	if(False in test_results):
+		log_message("FAILED ONE OR MORE TESTS", False)
 		print("	Failed one or more tests")
 	else:
+		log_message("PASSED ALL TESTS", False)
 		print("	All tests passed")
 main()
