@@ -1,0 +1,2805 @@
+2020-08-03 22:00:49	CS 430 Summer 2020 Final Project, Emma Foley
+
+	#####
+
+
+2020-08-03 22:00:49	Starting user prompts
+	User chose to run in test mode
+	#####
+
+
+2020-08-03 22:00:50	Run the program in test mode, running functions on random values as needed and comparing to python built in results
+2020-08-03 22:00:50	1. testing select function for randomized median finding against the result of the python builtin sort for lists and lookup by index
+	
+Test 1 1
+	
+Test 1 2
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [78, 93]
+	The randomly selected split element is: 78
+	Elements smaller than the split: []
+	Elements larger than the split: [93]
+	Elements equal to the split: [78]
+2020-08-03 22:00:50	The 1th element is: 78
+2020-08-03 22:00:50	The built in python sort and list indexing found: 78
+	
+Test 1 3
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [48, 78, 98]
+	The randomly selected split element is: 98
+	Elements smaller than the split: [48, 78]
+	Elements larger than the split: []
+	Elements equal to the split: [98]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [48, 78]
+	The randomly selected split element is: 48
+	Elements smaller than the split: []
+	Elements larger than the split: [78]
+	Elements equal to the split: [48]
+2020-08-03 22:00:50	The 1th element is: 48
+2020-08-03 22:00:50	The built in python sort and list indexing found: 48
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [48, 78, 98]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [48]
+	Elements larger than the split: [98]
+	Elements equal to the split: [78]
+2020-08-03 22:00:50	The 2th element is: 78
+2020-08-03 22:00:50	The built in python sort and list indexing found: 78
+	
+Test 1 4
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [82, 62, 39, 23]
+	The randomly selected split element is: 62
+	Elements smaller than the split: [39, 23]
+	Elements larger than the split: [82]
+	Elements equal to the split: [62]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [39, 23]
+	The randomly selected split element is: 39
+	Elements smaller than the split: [23]
+	Elements larger than the split: []
+	Elements equal to the split: [39]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [23]
+	Return the one element list, 23
+2020-08-03 22:00:50	The built in python sort and list indexing found: 23
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [82, 62, 39, 23]
+	The randomly selected split element is: 82
+	Elements smaller than the split: [62, 39, 23]
+	Elements larger than the split: []
+	Elements equal to the split: [82]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [62, 39, 23]
+	The randomly selected split element is: 62
+	Elements smaller than the split: [39, 23]
+	Elements larger than the split: []
+	Elements equal to the split: [62]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [39, 23]
+	The randomly selected split element is: 39
+	Elements smaller than the split: [23]
+	Elements larger than the split: []
+	Elements equal to the split: [39]
+2020-08-03 22:00:50	The 2th element is: 39
+2020-08-03 22:00:50	The built in python sort and list indexing found: 39
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [82, 62, 39, 23]
+	The randomly selected split element is: 39
+	Elements smaller than the split: [23]
+	Elements larger than the split: [82, 62]
+	Elements equal to the split: [39]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [82, 62]
+	The randomly selected split element is: 82
+	Elements smaller than the split: [62]
+	Elements larger than the split: []
+	Elements equal to the split: [82]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [62]
+	Return the one element list, 62
+2020-08-03 22:00:50	The built in python sort and list indexing found: 62
+	
+Test 1 5
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [27, 99, 84, 84, 87]
+	The randomly selected split element is: 84
+	Elements smaller than the split: [27]
+	Elements larger than the split: [99, 87]
+	Elements equal to the split: [84, 84]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [27]
+	Return the one element list, 27
+2020-08-03 22:00:50	The built in python sort and list indexing found: 27
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [27, 99, 84, 84, 87]
+	The randomly selected split element is: 99
+	Elements smaller than the split: [27, 84, 84, 87]
+	Elements larger than the split: []
+	Elements equal to the split: [99]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [27, 84, 84, 87]
+	The randomly selected split element is: 84
+	Elements smaller than the split: [27]
+	Elements larger than the split: [87]
+	Elements equal to the split: [84, 84]
+2020-08-03 22:00:50	The 2th element is: 84
+2020-08-03 22:00:50	The built in python sort and list indexing found: 84
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [27, 99, 84, 84, 87]
+	The randomly selected split element is: 99
+	Elements smaller than the split: [27, 84, 84, 87]
+	Elements larger than the split: []
+	Elements equal to the split: [99]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [27, 84, 84, 87]
+	The randomly selected split element is: 87
+	Elements smaller than the split: [27, 84, 84]
+	Elements larger than the split: []
+	Elements equal to the split: [87]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [27, 84, 84]
+	The randomly selected split element is: 84
+	Elements smaller than the split: [27]
+	Elements larger than the split: []
+	Elements equal to the split: [84, 84]
+2020-08-03 22:00:50	The 3th element is: 84
+2020-08-03 22:00:50	The built in python sort and list indexing found: 84
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [27, 99, 84, 84, 87]
+	The randomly selected split element is: 99
+	Elements smaller than the split: [27, 84, 84, 87]
+	Elements larger than the split: []
+	Elements equal to the split: [99]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [27, 84, 84, 87]
+	The randomly selected split element is: 84
+	Elements smaller than the split: [27]
+	Elements larger than the split: [87]
+	Elements equal to the split: [84, 84]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [87]
+	Return the one element list, 87
+2020-08-03 22:00:50	The built in python sort and list indexing found: 87
+	
+Test 1 6
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [44, 16, 78, 16, 20, 98]
+	The randomly selected split element is: 16
+	Elements smaller than the split: []
+	Elements larger than the split: [44, 78, 20, 98]
+	Elements equal to the split: [16, 16]
+2020-08-03 22:00:50	The 1th element is: 16
+2020-08-03 22:00:50	The built in python sort and list indexing found: 16
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [44, 16, 78, 16, 20, 98]
+	The randomly selected split element is: 20
+	Elements smaller than the split: [16, 16]
+	Elements larger than the split: [44, 78, 98]
+	Elements equal to the split: [20]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [16, 16]
+	All elements are equivalent, 16
+2020-08-03 22:00:50	The built in python sort and list indexing found: 16
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [44, 16, 78, 16, 20, 98]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [44, 16, 16, 20]
+	Elements larger than the split: [98]
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [44, 16, 16, 20]
+	The randomly selected split element is: 44
+	Elements smaller than the split: [16, 16, 20]
+	Elements larger than the split: []
+	Elements equal to the split: [44]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [16, 16, 20]
+	The randomly selected split element is: 20
+	Elements smaller than the split: [16, 16]
+	Elements larger than the split: []
+	Elements equal to the split: [20]
+2020-08-03 22:00:50	The 3th element is: 20
+2020-08-03 22:00:50	The built in python sort and list indexing found: 20
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [44, 16, 78, 16, 20, 98]
+	The randomly selected split element is: 44
+	Elements smaller than the split: [16, 16, 20]
+	Elements larger than the split: [78, 98]
+	Elements equal to the split: [44]
+2020-08-03 22:00:50	The 4th element is: 44
+2020-08-03 22:00:50	The built in python sort and list indexing found: 44
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [44, 16, 78, 16, 20, 98]
+	The randomly selected split element is: 16
+	Elements smaller than the split: []
+	Elements larger than the split: [44, 78, 20, 98]
+	Elements equal to the split: [16, 16]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [44, 78, 20, 98]
+	The randomly selected split element is: 98
+	Elements smaller than the split: [44, 78, 20]
+	Elements larger than the split: []
+	Elements equal to the split: [98]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [44, 78, 20]
+	The randomly selected split element is: 20
+	Elements smaller than the split: []
+	Elements larger than the split: [44, 78]
+	Elements equal to the split: [20]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [44, 78]
+	The randomly selected split element is: 44
+	Elements smaller than the split: []
+	Elements larger than the split: [78]
+	Elements equal to the split: [44]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [78]
+	Return the one element list, 78
+2020-08-03 22:00:50	The built in python sort and list indexing found: 78
+	
+Test 1 7
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [72, 54, 31, 30, 13, 28, 87]
+	The randomly selected split element is: 54
+	Elements smaller than the split: [31, 30, 13, 28]
+	Elements larger than the split: [72, 87]
+	Elements equal to the split: [54]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [31, 30, 13, 28]
+	The randomly selected split element is: 30
+	Elements smaller than the split: [13, 28]
+	Elements larger than the split: [31]
+	Elements equal to the split: [30]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [13, 28]
+	The randomly selected split element is: 28
+	Elements smaller than the split: [13]
+	Elements larger than the split: []
+	Elements equal to the split: [28]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [13]
+	Return the one element list, 13
+2020-08-03 22:00:50	The built in python sort and list indexing found: 13
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [72, 54, 31, 30, 13, 28, 87]
+	The randomly selected split element is: 87
+	Elements smaller than the split: [72, 54, 31, 30, 13, 28]
+	Elements larger than the split: []
+	Elements equal to the split: [87]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [72, 54, 31, 30, 13, 28]
+	The randomly selected split element is: 31
+	Elements smaller than the split: [30, 13, 28]
+	Elements larger than the split: [72, 54]
+	Elements equal to the split: [31]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [30, 13, 28]
+	The randomly selected split element is: 28
+	Elements smaller than the split: [13]
+	Elements larger than the split: [30]
+	Elements equal to the split: [28]
+2020-08-03 22:00:50	The 2th element is: 28
+2020-08-03 22:00:50	The built in python sort and list indexing found: 28
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [72, 54, 31, 30, 13, 28, 87]
+	The randomly selected split element is: 13
+	Elements smaller than the split: []
+	Elements larger than the split: [72, 54, 31, 30, 28, 87]
+	Elements equal to the split: [13]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [72, 54, 31, 30, 28, 87]
+	The randomly selected split element is: 28
+	Elements smaller than the split: []
+	Elements larger than the split: [72, 54, 31, 30, 87]
+	Elements equal to the split: [28]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [72, 54, 31, 30, 87]
+	The randomly selected split element is: 31
+	Elements smaller than the split: [30]
+	Elements larger than the split: [72, 54, 87]
+	Elements equal to the split: [31]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [30]
+	Return the one element list, 30
+2020-08-03 22:00:50	The built in python sort and list indexing found: 30
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [72, 54, 31, 30, 13, 28, 87]
+	The randomly selected split element is: 30
+	Elements smaller than the split: [13, 28]
+	Elements larger than the split: [72, 54, 31, 87]
+	Elements equal to the split: [30]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [72, 54, 31, 87]
+	The randomly selected split element is: 87
+	Elements smaller than the split: [72, 54, 31]
+	Elements larger than the split: []
+	Elements equal to the split: [87]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [72, 54, 31]
+	The randomly selected split element is: 54
+	Elements smaller than the split: [31]
+	Elements larger than the split: [72]
+	Elements equal to the split: [54]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [31]
+	Return the one element list, 31
+2020-08-03 22:00:50	The built in python sort and list indexing found: 31
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [72, 54, 31, 30, 13, 28, 87]
+	The randomly selected split element is: 87
+	Elements smaller than the split: [72, 54, 31, 30, 13, 28]
+	Elements larger than the split: []
+	Elements equal to the split: [87]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [72, 54, 31, 30, 13, 28]
+	The randomly selected split element is: 54
+	Elements smaller than the split: [31, 30, 13, 28]
+	Elements larger than the split: [72]
+	Elements equal to the split: [54]
+2020-08-03 22:00:50	The 5th element is: 54
+2020-08-03 22:00:50	The built in python sort and list indexing found: 54
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [72, 54, 31, 30, 13, 28, 87]
+	The randomly selected split element is: 28
+	Elements smaller than the split: [13]
+	Elements larger than the split: [72, 54, 31, 30, 87]
+	Elements equal to the split: [28]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [72, 54, 31, 30, 87]
+	The randomly selected split element is: 30
+	Elements smaller than the split: []
+	Elements larger than the split: [72, 54, 31, 87]
+	Elements equal to the split: [30]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [72, 54, 31, 87]
+	The randomly selected split element is: 54
+	Elements smaller than the split: [31]
+	Elements larger than the split: [72, 87]
+	Elements equal to the split: [54]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [72, 87]
+	The randomly selected split element is: 87
+	Elements smaller than the split: [72]
+	Elements larger than the split: []
+	Elements equal to the split: [87]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [72]
+	Return the one element list, 72
+2020-08-03 22:00:50	The built in python sort and list indexing found: 72
+	
+Test 1 8
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [14, 93, 88, 3, 38, 91, 2, 37]
+	The randomly selected split element is: 2
+	Elements smaller than the split: []
+	Elements larger than the split: [14, 93, 88, 3, 38, 91, 37]
+	Elements equal to the split: [2]
+2020-08-03 22:00:50	The 1th element is: 2
+2020-08-03 22:00:50	The built in python sort and list indexing found: 2
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [14, 93, 88, 3, 38, 91, 2, 37]
+	The randomly selected split element is: 14
+	Elements smaller than the split: [3, 2]
+	Elements larger than the split: [93, 88, 38, 91, 37]
+	Elements equal to the split: [14]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [3, 2]
+	The randomly selected split element is: 3
+	Elements smaller than the split: [2]
+	Elements larger than the split: []
+	Elements equal to the split: [3]
+2020-08-03 22:00:50	The 2th element is: 3
+2020-08-03 22:00:50	The built in python sort and list indexing found: 3
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [14, 93, 88, 3, 38, 91, 2, 37]
+	The randomly selected split element is: 14
+	Elements smaller than the split: [3, 2]
+	Elements larger than the split: [93, 88, 38, 91, 37]
+	Elements equal to the split: [14]
+2020-08-03 22:00:50	The 3th element is: 14
+2020-08-03 22:00:50	The built in python sort and list indexing found: 14
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [14, 93, 88, 3, 38, 91, 2, 37]
+	The randomly selected split element is: 3
+	Elements smaller than the split: [2]
+	Elements larger than the split: [14, 93, 88, 38, 91, 37]
+	Elements equal to the split: [3]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [14, 93, 88, 38, 91, 37]
+	The randomly selected split element is: 91
+	Elements smaller than the split: [14, 88, 38, 37]
+	Elements larger than the split: [93]
+	Elements equal to the split: [91]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [14, 88, 38, 37]
+	The randomly selected split element is: 38
+	Elements smaller than the split: [14, 37]
+	Elements larger than the split: [88]
+	Elements equal to the split: [38]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [14, 37]
+	The randomly selected split element is: 14
+	Elements smaller than the split: []
+	Elements larger than the split: [37]
+	Elements equal to the split: [14]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [37]
+	Return the one element list, 37
+2020-08-03 22:00:50	The built in python sort and list indexing found: 37
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [14, 93, 88, 3, 38, 91, 2, 37]
+	The randomly selected split element is: 14
+	Elements smaller than the split: [3, 2]
+	Elements larger than the split: [93, 88, 38, 91, 37]
+	Elements equal to the split: [14]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [93, 88, 38, 91, 37]
+	The randomly selected split element is: 38
+	Elements smaller than the split: [37]
+	Elements larger than the split: [93, 88, 91]
+	Elements equal to the split: [38]
+2020-08-03 22:00:50	The 2th element is: 38
+2020-08-03 22:00:50	The built in python sort and list indexing found: 38
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [14, 93, 88, 3, 38, 91, 2, 37]
+	The randomly selected split element is: 91
+	Elements smaller than the split: [14, 88, 3, 38, 2, 37]
+	Elements larger than the split: [93]
+	Elements equal to the split: [91]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [14, 88, 3, 38, 2, 37]
+	The randomly selected split element is: 38
+	Elements smaller than the split: [14, 3, 2, 37]
+	Elements larger than the split: [88]
+	Elements equal to the split: [38]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [88]
+	Return the one element list, 88
+2020-08-03 22:00:50	The built in python sort and list indexing found: 88
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [14, 93, 88, 3, 38, 91, 2, 37]
+	The randomly selected split element is: 88
+	Elements smaller than the split: [14, 3, 38, 2, 37]
+	Elements larger than the split: [93, 91]
+	Elements equal to the split: [88]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [93, 91]
+	The randomly selected split element is: 93
+	Elements smaller than the split: [91]
+	Elements larger than the split: []
+	Elements equal to the split: [93]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [91]
+	Return the one element list, 91
+2020-08-03 22:00:50	The built in python sort and list indexing found: 91
+	
+Test 1 9
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [15, 80, 25, 89, 24, 75, 53, 90, 9]
+	The randomly selected split element is: 53
+	Elements smaller than the split: [15, 25, 24, 9]
+	Elements larger than the split: [80, 89, 75, 90]
+	Elements equal to the split: [53]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [15, 25, 24, 9]
+	The randomly selected split element is: 24
+	Elements smaller than the split: [15, 9]
+	Elements larger than the split: [25]
+	Elements equal to the split: [24]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [15, 9]
+	The randomly selected split element is: 15
+	Elements smaller than the split: [9]
+	Elements larger than the split: []
+	Elements equal to the split: [15]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [9]
+	Return the one element list, 9
+2020-08-03 22:00:50	The built in python sort and list indexing found: 9
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [15, 80, 25, 89, 24, 75, 53, 90, 9]
+	The randomly selected split element is: 75
+	Elements smaller than the split: [15, 25, 24, 53, 9]
+	Elements larger than the split: [80, 89, 90]
+	Elements equal to the split: [75]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [15, 25, 24, 53, 9]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [15, 24, 9]
+	Elements larger than the split: [53]
+	Elements equal to the split: [25]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [15, 24, 9]
+	The randomly selected split element is: 24
+	Elements smaller than the split: [15, 9]
+	Elements larger than the split: []
+	Elements equal to the split: [24]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [15, 9]
+	The randomly selected split element is: 9
+	Elements smaller than the split: []
+	Elements larger than the split: [15]
+	Elements equal to the split: [9]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [15]
+	Return the one element list, 15
+2020-08-03 22:00:50	The built in python sort and list indexing found: 15
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [15, 80, 25, 89, 24, 75, 53, 90, 9]
+	The randomly selected split element is: 24
+	Elements smaller than the split: [15, 9]
+	Elements larger than the split: [80, 25, 89, 75, 53, 90]
+	Elements equal to the split: [24]
+2020-08-03 22:00:50	The 3th element is: 24
+2020-08-03 22:00:50	The built in python sort and list indexing found: 24
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [15, 80, 25, 89, 24, 75, 53, 90, 9]
+	The randomly selected split element is: 24
+	Elements smaller than the split: [15, 9]
+	Elements larger than the split: [80, 25, 89, 75, 53, 90]
+	Elements equal to the split: [24]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [80, 25, 89, 75, 53, 90]
+	The randomly selected split element is: 25
+	Elements smaller than the split: []
+	Elements larger than the split: [80, 89, 75, 53, 90]
+	Elements equal to the split: [25]
+2020-08-03 22:00:50	The 1th element is: 25
+2020-08-03 22:00:50	The built in python sort and list indexing found: 25
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [15, 80, 25, 89, 24, 75, 53, 90, 9]
+	The randomly selected split element is: 90
+	Elements smaller than the split: [15, 80, 25, 89, 24, 75, 53, 9]
+	Elements larger than the split: []
+	Elements equal to the split: [90]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [15, 80, 25, 89, 24, 75, 53, 9]
+	The randomly selected split element is: 80
+	Elements smaller than the split: [15, 25, 24, 75, 53, 9]
+	Elements larger than the split: [89]
+	Elements equal to the split: [80]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [15, 25, 24, 75, 53, 9]
+	The randomly selected split element is: 75
+	Elements smaller than the split: [15, 25, 24, 53, 9]
+	Elements larger than the split: []
+	Elements equal to the split: [75]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [15, 25, 24, 53, 9]
+	The randomly selected split element is: 15
+	Elements smaller than the split: [9]
+	Elements larger than the split: [25, 24, 53]
+	Elements equal to the split: [15]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [25, 24, 53]
+	The randomly selected split element is: 24
+	Elements smaller than the split: []
+	Elements larger than the split: [25, 53]
+	Elements equal to the split: [24]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [25, 53]
+	The randomly selected split element is: 53
+	Elements smaller than the split: [25]
+	Elements larger than the split: []
+	Elements equal to the split: [53]
+2020-08-03 22:00:50	The 2th element is: 53
+2020-08-03 22:00:50	The built in python sort and list indexing found: 53
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [15, 80, 25, 89, 24, 75, 53, 90, 9]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [15, 24, 9]
+	Elements larger than the split: [80, 89, 75, 53, 90]
+	Elements equal to the split: [25]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [80, 89, 75, 53, 90]
+	The randomly selected split element is: 90
+	Elements smaller than the split: [80, 89, 75, 53]
+	Elements larger than the split: []
+	Elements equal to the split: [90]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [80, 89, 75, 53]
+	The randomly selected split element is: 53
+	Elements smaller than the split: []
+	Elements larger than the split: [80, 89, 75]
+	Elements equal to the split: [53]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [80, 89, 75]
+	The randomly selected split element is: 89
+	Elements smaller than the split: [80, 75]
+	Elements larger than the split: []
+	Elements equal to the split: [89]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [80, 75]
+	The randomly selected split element is: 80
+	Elements smaller than the split: [75]
+	Elements larger than the split: []
+	Elements equal to the split: [80]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [75]
+	Return the one element list, 75
+2020-08-03 22:00:50	The built in python sort and list indexing found: 75
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [15, 80, 25, 89, 24, 75, 53, 90, 9]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [15, 24, 9]
+	Elements larger than the split: [80, 89, 75, 53, 90]
+	Elements equal to the split: [25]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [80, 89, 75, 53, 90]
+	The randomly selected split element is: 90
+	Elements smaller than the split: [80, 89, 75, 53]
+	Elements larger than the split: []
+	Elements equal to the split: [90]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [80, 89, 75, 53]
+	The randomly selected split element is: 75
+	Elements smaller than the split: [53]
+	Elements larger than the split: [80, 89]
+	Elements equal to the split: [75]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [80, 89]
+	The randomly selected split element is: 89
+	Elements smaller than the split: [80]
+	Elements larger than the split: []
+	Elements equal to the split: [89]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [80]
+	Return the one element list, 80
+2020-08-03 22:00:50	The built in python sort and list indexing found: 80
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [15, 80, 25, 89, 24, 75, 53, 90, 9]
+	The randomly selected split element is: 75
+	Elements smaller than the split: [15, 25, 24, 53, 9]
+	Elements larger than the split: [80, 89, 90]
+	Elements equal to the split: [75]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [80, 89, 90]
+	The randomly selected split element is: 90
+	Elements smaller than the split: [80, 89]
+	Elements larger than the split: []
+	Elements equal to the split: [90]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [80, 89]
+	The randomly selected split element is: 89
+	Elements smaller than the split: [80]
+	Elements larger than the split: []
+	Elements equal to the split: [89]
+2020-08-03 22:00:50	The 2th element is: 89
+2020-08-03 22:00:50	The built in python sort and list indexing found: 89
+	
+Test 1 10
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [45, 89, 36, 44, 17, 86, 37, 91, 2, 77]
+	The randomly selected split element is: 77
+	Elements smaller than the split: [45, 36, 44, 17, 37, 2]
+	Elements larger than the split: [89, 86, 91]
+	Elements equal to the split: [77]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [45, 36, 44, 17, 37, 2]
+	The randomly selected split element is: 37
+	Elements smaller than the split: [36, 17, 2]
+	Elements larger than the split: [45, 44]
+	Elements equal to the split: [37]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [36, 17, 2]
+	The randomly selected split element is: 17
+	Elements smaller than the split: [2]
+	Elements larger than the split: [36]
+	Elements equal to the split: [17]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [2]
+	Return the one element list, 2
+2020-08-03 22:00:50	The built in python sort and list indexing found: 2
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [45, 89, 36, 44, 17, 86, 37, 91, 2, 77]
+	The randomly selected split element is: 37
+	Elements smaller than the split: [36, 17, 2]
+	Elements larger than the split: [45, 89, 44, 86, 91, 77]
+	Elements equal to the split: [37]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [36, 17, 2]
+	The randomly selected split element is: 36
+	Elements smaller than the split: [17, 2]
+	Elements larger than the split: []
+	Elements equal to the split: [36]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [17, 2]
+	The randomly selected split element is: 2
+	Elements smaller than the split: []
+	Elements larger than the split: [17]
+	Elements equal to the split: [2]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [17]
+	Return the one element list, 17
+2020-08-03 22:00:50	The built in python sort and list indexing found: 17
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [45, 89, 36, 44, 17, 86, 37, 91, 2, 77]
+	The randomly selected split element is: 17
+	Elements smaller than the split: [2]
+	Elements larger than the split: [45, 89, 36, 44, 86, 37, 91, 77]
+	Elements equal to the split: [17]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [45, 89, 36, 44, 86, 37, 91, 77]
+	The randomly selected split element is: 44
+	Elements smaller than the split: [36, 37]
+	Elements larger than the split: [45, 89, 86, 91, 77]
+	Elements equal to the split: [44]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [36, 37]
+	The randomly selected split element is: 37
+	Elements smaller than the split: [36]
+	Elements larger than the split: []
+	Elements equal to the split: [37]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [36]
+	Return the one element list, 36
+2020-08-03 22:00:50	The built in python sort and list indexing found: 36
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [45, 89, 36, 44, 17, 86, 37, 91, 2, 77]
+	The randomly selected split element is: 89
+	Elements smaller than the split: [45, 36, 44, 17, 86, 37, 2, 77]
+	Elements larger than the split: [91]
+	Elements equal to the split: [89]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [45, 36, 44, 17, 86, 37, 2, 77]
+	The randomly selected split element is: 86
+	Elements smaller than the split: [45, 36, 44, 17, 37, 2, 77]
+	Elements larger than the split: []
+	Elements equal to the split: [86]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [45, 36, 44, 17, 37, 2, 77]
+	The randomly selected split element is: 17
+	Elements smaller than the split: [2]
+	Elements larger than the split: [45, 36, 44, 37, 77]
+	Elements equal to the split: [17]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [45, 36, 44, 37, 77]
+	The randomly selected split element is: 45
+	Elements smaller than the split: [36, 44, 37]
+	Elements larger than the split: [77]
+	Elements equal to the split: [45]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [36, 44, 37]
+	The randomly selected split element is: 44
+	Elements smaller than the split: [36, 37]
+	Elements larger than the split: []
+	Elements equal to the split: [44]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [36, 37]
+	The randomly selected split element is: 37
+	Elements smaller than the split: [36]
+	Elements larger than the split: []
+	Elements equal to the split: [37]
+2020-08-03 22:00:50	The 2th element is: 37
+2020-08-03 22:00:50	The built in python sort and list indexing found: 37
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [45, 89, 36, 44, 17, 86, 37, 91, 2, 77]
+	The randomly selected split element is: 44
+	Elements smaller than the split: [36, 17, 37, 2]
+	Elements larger than the split: [45, 89, 86, 91, 77]
+	Elements equal to the split: [44]
+2020-08-03 22:00:50	The 5th element is: 44
+2020-08-03 22:00:50	The built in python sort and list indexing found: 44
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [45, 89, 36, 44, 17, 86, 37, 91, 2, 77]
+	The randomly selected split element is: 45
+	Elements smaller than the split: [36, 44, 17, 37, 2]
+	Elements larger than the split: [89, 86, 91, 77]
+	Elements equal to the split: [45]
+2020-08-03 22:00:50	The 6th element is: 45
+2020-08-03 22:00:50	The built in python sort and list indexing found: 45
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [45, 89, 36, 44, 17, 86, 37, 91, 2, 77]
+	The randomly selected split element is: 17
+	Elements smaller than the split: [2]
+	Elements larger than the split: [45, 89, 36, 44, 86, 37, 91, 77]
+	Elements equal to the split: [17]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [45, 89, 36, 44, 86, 37, 91, 77]
+	The randomly selected split element is: 89
+	Elements smaller than the split: [45, 36, 44, 86, 37, 77]
+	Elements larger than the split: [91]
+	Elements equal to the split: [89]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [45, 36, 44, 86, 37, 77]
+	The randomly selected split element is: 45
+	Elements smaller than the split: [36, 44, 37]
+	Elements larger than the split: [86, 77]
+	Elements equal to the split: [45]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [86, 77]
+	The randomly selected split element is: 86
+	Elements smaller than the split: [77]
+	Elements larger than the split: []
+	Elements equal to the split: [86]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [77]
+	Return the one element list, 77
+2020-08-03 22:00:50	The built in python sort and list indexing found: 77
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [45, 89, 36, 44, 17, 86, 37, 91, 2, 77]
+	The randomly selected split element is: 86
+	Elements smaller than the split: [45, 36, 44, 17, 37, 2, 77]
+	Elements larger than the split: [89, 91]
+	Elements equal to the split: [86]
+2020-08-03 22:00:50	The 8th element is: 86
+2020-08-03 22:00:50	The built in python sort and list indexing found: 86
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 9th element of [45, 89, 36, 44, 17, 86, 37, 91, 2, 77]
+	The randomly selected split element is: 89
+	Elements smaller than the split: [45, 36, 44, 17, 86, 37, 2, 77]
+	Elements larger than the split: [91]
+	Elements equal to the split: [89]
+2020-08-03 22:00:50	The 9th element is: 89
+2020-08-03 22:00:50	The built in python sort and list indexing found: 89
+	
+Test 1 11
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 81
+	Elements smaller than the split: [8, 34, 37, 18, 48, 41, 78, 71, 48]
+	Elements larger than the split: [99]
+	Elements equal to the split: [81]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [8, 34, 37, 18, 48, 41, 78, 71, 48]
+	The randomly selected split element is: 37
+	Elements smaller than the split: [8, 34, 18]
+	Elements larger than the split: [48, 41, 78, 71, 48]
+	Elements equal to the split: [37]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [8, 34, 18]
+	The randomly selected split element is: 18
+	Elements smaller than the split: [8]
+	Elements larger than the split: [34]
+	Elements equal to the split: [18]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [8]
+	Return the one element list, 8
+2020-08-03 22:00:50	The built in python sort and list indexing found: 8
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 48
+	Elements smaller than the split: [8, 34, 37, 18, 41]
+	Elements larger than the split: [78, 81, 99, 71]
+	Elements equal to the split: [48, 48]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [8, 34, 37, 18, 41]
+	The randomly selected split element is: 34
+	Elements smaller than the split: [8, 18]
+	Elements larger than the split: [37, 41]
+	Elements equal to the split: [34]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [8, 18]
+	The randomly selected split element is: 8
+	Elements smaller than the split: []
+	Elements larger than the split: [18]
+	Elements equal to the split: [8]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [18]
+	Return the one element list, 18
+2020-08-03 22:00:50	The built in python sort and list indexing found: 18
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [8, 34, 37, 18, 48, 41, 71, 48]
+	Elements larger than the split: [81, 99]
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [8, 34, 37, 18, 48, 41, 71, 48]
+	The randomly selected split element is: 48
+	Elements smaller than the split: [8, 34, 37, 18, 41]
+	Elements larger than the split: [71]
+	Elements equal to the split: [48, 48]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [8, 34, 37, 18, 41]
+	The randomly selected split element is: 37
+	Elements smaller than the split: [8, 34, 18]
+	Elements larger than the split: [41]
+	Elements equal to the split: [37]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [8, 34, 18]
+	The randomly selected split element is: 8
+	Elements smaller than the split: []
+	Elements larger than the split: [34, 18]
+	Elements equal to the split: [8]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [34, 18]
+	The randomly selected split element is: 34
+	Elements smaller than the split: [18]
+	Elements larger than the split: []
+	Elements equal to the split: [34]
+2020-08-03 22:00:50	The 2th element is: 34
+2020-08-03 22:00:50	The built in python sort and list indexing found: 34
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [8, 34, 37, 18, 48, 41, 71, 48]
+	Elements larger than the split: [81, 99]
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [8, 34, 37, 18, 48, 41, 71, 48]
+	The randomly selected split element is: 41
+	Elements smaller than the split: [8, 34, 37, 18]
+	Elements larger than the split: [48, 71, 48]
+	Elements equal to the split: [41]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [8, 34, 37, 18]
+	The randomly selected split element is: 37
+	Elements smaller than the split: [8, 34, 18]
+	Elements larger than the split: []
+	Elements equal to the split: [37]
+2020-08-03 22:00:50	The 4th element is: 37
+2020-08-03 22:00:50	The built in python sort and list indexing found: 37
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 48
+	Elements smaller than the split: [8, 34, 37, 18, 41]
+	Elements larger than the split: [78, 81, 99, 71]
+	Elements equal to the split: [48, 48]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [8, 34, 37, 18, 41]
+	The randomly selected split element is: 34
+	Elements smaller than the split: [8, 18]
+	Elements larger than the split: [37, 41]
+	Elements equal to the split: [34]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [37, 41]
+	The randomly selected split element is: 41
+	Elements smaller than the split: [37]
+	Elements larger than the split: []
+	Elements equal to the split: [41]
+2020-08-03 22:00:50	The 2th element is: 41
+2020-08-03 22:00:50	The built in python sort and list indexing found: 41
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [8, 34, 37, 18, 48, 41, 71, 48]
+	Elements larger than the split: [81, 99]
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [8, 34, 37, 18, 48, 41, 71, 48]
+	The randomly selected split element is: 8
+	Elements smaller than the split: []
+	Elements larger than the split: [34, 37, 18, 48, 41, 71, 48]
+	Elements equal to the split: [8]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [34, 37, 18, 48, 41, 71, 48]
+	The randomly selected split element is: 34
+	Elements smaller than the split: [18]
+	Elements larger than the split: [37, 48, 41, 71, 48]
+	Elements equal to the split: [34]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [37, 48, 41, 71, 48]
+	The randomly selected split element is: 48
+	Elements smaller than the split: [37, 41]
+	Elements larger than the split: [71]
+	Elements equal to the split: [48, 48]
+2020-08-03 22:00:50	The 3th element is: 48
+2020-08-03 22:00:50	The built in python sort and list indexing found: 48
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 48
+	Elements smaller than the split: [8, 34, 37, 18, 41]
+	Elements larger than the split: [78, 81, 99, 71]
+	Elements equal to the split: [48, 48]
+2020-08-03 22:00:50	The 7th element is: 48
+2020-08-03 22:00:50	The built in python sort and list indexing found: 48
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [8, 34, 37, 18, 48, 41, 71, 48]
+	Elements larger than the split: [81, 99]
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [8, 34, 37, 18, 48, 41, 71, 48]
+	The randomly selected split element is: 48
+	Elements smaller than the split: [8, 34, 37, 18, 41]
+	Elements larger than the split: [71]
+	Elements equal to the split: [48, 48]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [71]
+	Return the one element list, 71
+2020-08-03 22:00:50	The built in python sort and list indexing found: 71
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 9th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 18
+	Elements smaller than the split: [8]
+	Elements larger than the split: [34, 37, 48, 41, 78, 81, 99, 71, 48]
+	Elements equal to the split: [18]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [34, 37, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 37
+	Elements smaller than the split: [34]
+	Elements larger than the split: [48, 41, 78, 81, 99, 71, 48]
+	Elements equal to the split: [37]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 41
+	Elements smaller than the split: []
+	Elements larger than the split: [48, 78, 81, 99, 71, 48]
+	Elements equal to the split: [41]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [48, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 71
+	Elements smaller than the split: [48, 48]
+	Elements larger than the split: [78, 81, 99]
+	Elements equal to the split: [71]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [78, 81, 99]
+	The randomly selected split element is: 81
+	Elements smaller than the split: [78]
+	Elements larger than the split: [99]
+	Elements equal to the split: [81]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [78]
+	Return the one element list, 78
+2020-08-03 22:00:50	The built in python sort and list indexing found: 78
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 10th element of [8, 34, 37, 18, 48, 41, 78, 81, 99, 71, 48]
+	The randomly selected split element is: 99
+	Elements smaller than the split: [8, 34, 37, 18, 48, 41, 78, 81, 71, 48]
+	Elements larger than the split: []
+	Elements equal to the split: [99]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 10th element of [8, 34, 37, 18, 48, 41, 78, 81, 71, 48]
+	The randomly selected split element is: 37
+	Elements smaller than the split: [8, 34, 18]
+	Elements larger than the split: [48, 41, 78, 81, 71, 48]
+	Elements equal to the split: [37]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [48, 41, 78, 81, 71, 48]
+	The randomly selected split element is: 41
+	Elements smaller than the split: []
+	Elements larger than the split: [48, 78, 81, 71, 48]
+	Elements equal to the split: [41]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [48, 78, 81, 71, 48]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [48, 71, 48]
+	Elements larger than the split: [81]
+	Elements equal to the split: [78]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [81]
+	Return the one element list, 81
+2020-08-03 22:00:50	The built in python sort and list indexing found: 81
+	
+Test 1 12
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 93
+	Elements smaller than the split: [29, 12, 83, 92, 46, 31, 16, 43, 40]
+	Elements larger than the split: [96, 94]
+	Elements equal to the split: [93]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [29, 12, 83, 92, 46, 31, 16, 43, 40]
+	The randomly selected split element is: 40
+	Elements smaller than the split: [29, 12, 31, 16]
+	Elements larger than the split: [83, 92, 46, 43]
+	Elements equal to the split: [40]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [29, 12, 31, 16]
+	The randomly selected split element is: 16
+	Elements smaller than the split: [12]
+	Elements larger than the split: [29, 31]
+	Elements equal to the split: [16]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [12]
+	Return the one element list, 12
+2020-08-03 22:00:50	The built in python sort and list indexing found: 12
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 94
+	Elements smaller than the split: [29, 12, 83, 93, 92, 46, 31, 16, 43, 40]
+	Elements larger than the split: [96]
+	Elements equal to the split: [94]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [29, 12, 83, 93, 92, 46, 31, 16, 43, 40]
+	The randomly selected split element is: 92
+	Elements smaller than the split: [29, 12, 83, 46, 31, 16, 43, 40]
+	Elements larger than the split: [93]
+	Elements equal to the split: [92]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [29, 12, 83, 46, 31, 16, 43, 40]
+	The randomly selected split element is: 31
+	Elements smaller than the split: [29, 12, 16]
+	Elements larger than the split: [83, 46, 43, 40]
+	Elements equal to the split: [31]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [29, 12, 16]
+	The randomly selected split element is: 29
+	Elements smaller than the split: [12, 16]
+	Elements larger than the split: []
+	Elements equal to the split: [29]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [12, 16]
+	The randomly selected split element is: 12
+	Elements smaller than the split: []
+	Elements larger than the split: [16]
+	Elements equal to the split: [12]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [16]
+	Return the one element list, 16
+2020-08-03 22:00:50	The built in python sort and list indexing found: 16
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 83
+	Elements smaller than the split: [29, 12, 46, 31, 16, 43, 40]
+	Elements larger than the split: [93, 92, 96, 94]
+	Elements equal to the split: [83]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [29, 12, 46, 31, 16, 43, 40]
+	The randomly selected split element is: 46
+	Elements smaller than the split: [29, 12, 31, 16, 43, 40]
+	Elements larger than the split: []
+	Elements equal to the split: [46]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [29, 12, 31, 16, 43, 40]
+	The randomly selected split element is: 43
+	Elements smaller than the split: [29, 12, 31, 16, 40]
+	Elements larger than the split: []
+	Elements equal to the split: [43]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [29, 12, 31, 16, 40]
+	The randomly selected split element is: 16
+	Elements smaller than the split: [12]
+	Elements larger than the split: [29, 31, 40]
+	Elements equal to the split: [16]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [29, 31, 40]
+	The randomly selected split element is: 29
+	Elements smaller than the split: []
+	Elements larger than the split: [31, 40]
+	Elements equal to the split: [29]
+2020-08-03 22:00:50	The 1th element is: 29
+2020-08-03 22:00:50	The built in python sort and list indexing found: 29
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 40
+	Elements smaller than the split: [29, 12, 31, 16]
+	Elements larger than the split: [83, 93, 92, 46, 96, 43, 94]
+	Elements equal to the split: [40]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [29, 12, 31, 16]
+	The randomly selected split element is: 29
+	Elements smaller than the split: [12, 16]
+	Elements larger than the split: [31]
+	Elements equal to the split: [29]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [31]
+	Return the one element list, 31
+2020-08-03 22:00:50	The built in python sort and list indexing found: 31
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 83
+	Elements smaller than the split: [29, 12, 46, 31, 16, 43, 40]
+	Elements larger than the split: [93, 92, 96, 94]
+	Elements equal to the split: [83]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [29, 12, 46, 31, 16, 43, 40]
+	The randomly selected split element is: 29
+	Elements smaller than the split: [12, 16]
+	Elements larger than the split: [46, 31, 43, 40]
+	Elements equal to the split: [29]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [46, 31, 43, 40]
+	The randomly selected split element is: 43
+	Elements smaller than the split: [31, 40]
+	Elements larger than the split: [46]
+	Elements equal to the split: [43]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [31, 40]
+	The randomly selected split element is: 40
+	Elements smaller than the split: [31]
+	Elements larger than the split: []
+	Elements equal to the split: [40]
+2020-08-03 22:00:50	The 2th element is: 40
+2020-08-03 22:00:50	The built in python sort and list indexing found: 40
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 46
+	Elements smaller than the split: [29, 12, 31, 16, 43, 40]
+	Elements larger than the split: [83, 93, 92, 96, 94]
+	Elements equal to the split: [46]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [29, 12, 31, 16, 43, 40]
+	The randomly selected split element is: 31
+	Elements smaller than the split: [29, 12, 16]
+	Elements larger than the split: [43, 40]
+	Elements equal to the split: [31]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [43, 40]
+	The randomly selected split element is: 40
+	Elements smaller than the split: []
+	Elements larger than the split: [43]
+	Elements equal to the split: [40]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [43]
+	Return the one element list, 43
+2020-08-03 22:00:50	The built in python sort and list indexing found: 43
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 83
+	Elements smaller than the split: [29, 12, 46, 31, 16, 43, 40]
+	Elements larger than the split: [93, 92, 96, 94]
+	Elements equal to the split: [83]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [29, 12, 46, 31, 16, 43, 40]
+	The randomly selected split element is: 43
+	Elements smaller than the split: [29, 12, 31, 16, 40]
+	Elements larger than the split: [46]
+	Elements equal to the split: [43]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [46]
+	Return the one element list, 46
+2020-08-03 22:00:50	The built in python sort and list indexing found: 46
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 93
+	Elements smaller than the split: [29, 12, 83, 92, 46, 31, 16, 43, 40]
+	Elements larger than the split: [96, 94]
+	Elements equal to the split: [93]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [29, 12, 83, 92, 46, 31, 16, 43, 40]
+	The randomly selected split element is: 12
+	Elements smaller than the split: []
+	Elements larger than the split: [29, 83, 92, 46, 31, 16, 43, 40]
+	Elements equal to the split: [12]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [29, 83, 92, 46, 31, 16, 43, 40]
+	The randomly selected split element is: 16
+	Elements smaller than the split: []
+	Elements larger than the split: [29, 83, 92, 46, 31, 43, 40]
+	Elements equal to the split: [16]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [29, 83, 92, 46, 31, 43, 40]
+	The randomly selected split element is: 29
+	Elements smaller than the split: []
+	Elements larger than the split: [83, 92, 46, 31, 43, 40]
+	Elements equal to the split: [29]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [83, 92, 46, 31, 43, 40]
+	The randomly selected split element is: 43
+	Elements smaller than the split: [31, 40]
+	Elements larger than the split: [83, 92, 46]
+	Elements equal to the split: [43]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [83, 92, 46]
+	The randomly selected split element is: 83
+	Elements smaller than the split: [46]
+	Elements larger than the split: [92]
+	Elements equal to the split: [83]
+2020-08-03 22:00:50	The 2th element is: 83
+2020-08-03 22:00:50	The built in python sort and list indexing found: 83
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 9th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 94
+	Elements smaller than the split: [29, 12, 83, 93, 92, 46, 31, 16, 43, 40]
+	Elements larger than the split: [96]
+	Elements equal to the split: [94]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 9th element of [29, 12, 83, 93, 92, 46, 31, 16, 43, 40]
+	The randomly selected split element is: 83
+	Elements smaller than the split: [29, 12, 46, 31, 16, 43, 40]
+	Elements larger than the split: [93, 92]
+	Elements equal to the split: [83]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [93, 92]
+	The randomly selected split element is: 92
+	Elements smaller than the split: []
+	Elements larger than the split: [93]
+	Elements equal to the split: [92]
+2020-08-03 22:00:50	The 1th element is: 92
+2020-08-03 22:00:50	The built in python sort and list indexing found: 92
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 10th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 29
+	Elements smaller than the split: [12, 16]
+	Elements larger than the split: [83, 93, 92, 46, 31, 96, 43, 94, 40]
+	Elements equal to the split: [29]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [83, 93, 92, 46, 31, 96, 43, 94, 40]
+	The randomly selected split element is: 83
+	Elements smaller than the split: [46, 31, 43, 40]
+	Elements larger than the split: [93, 92, 96, 94]
+	Elements equal to the split: [83]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [93, 92, 96, 94]
+	The randomly selected split element is: 93
+	Elements smaller than the split: [92]
+	Elements larger than the split: [96, 94]
+	Elements equal to the split: [93]
+2020-08-03 22:00:50	The 2th element is: 93
+2020-08-03 22:00:50	The built in python sort and list indexing found: 93
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 11th element of [29, 12, 83, 93, 92, 46, 31, 16, 96, 43, 94, 40]
+	The randomly selected split element is: 96
+	Elements smaller than the split: [29, 12, 83, 93, 92, 46, 31, 16, 43, 94, 40]
+	Elements larger than the split: []
+	Elements equal to the split: [96]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 11th element of [29, 12, 83, 93, 92, 46, 31, 16, 43, 94, 40]
+	The randomly selected split element is: 92
+	Elements smaller than the split: [29, 12, 83, 46, 31, 16, 43, 40]
+	Elements larger than the split: [93, 94]
+	Elements equal to the split: [92]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [93, 94]
+	The randomly selected split element is: 93
+	Elements smaller than the split: []
+	Elements larger than the split: [94]
+	Elements equal to the split: [93]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [94]
+	Return the one element list, 94
+2020-08-03 22:00:50	The built in python sort and list indexing found: 94
+	
+Test 1 13
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [19, 25]
+	Elements larger than the split: [76, 73, 66, 61, 98, 78, 63, 84, 89, 53]
+	Elements equal to the split: [32]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [19, 25]
+	The randomly selected split element is: 19
+	Elements smaller than the split: []
+	Elements larger than the split: [25]
+	Elements equal to the split: [19]
+2020-08-03 22:00:50	The 1th element is: 19
+2020-08-03 22:00:50	The built in python sort and list indexing found: 19
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [19]
+	Elements larger than the split: [76, 73, 32, 66, 61, 98, 78, 63, 84, 89, 53]
+	Elements equal to the split: [25]
+2020-08-03 22:00:50	The 2th element is: 25
+2020-08-03 22:00:50	The built in python sort and list indexing found: 25
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 76
+	Elements smaller than the split: [73, 32, 66, 19, 61, 63, 25, 53]
+	Elements larger than the split: [98, 78, 84, 89]
+	Elements equal to the split: [76]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [73, 32, 66, 19, 61, 63, 25, 53]
+	The randomly selected split element is: 53
+	Elements smaller than the split: [32, 19, 25]
+	Elements larger than the split: [73, 66, 61, 63]
+	Elements equal to the split: [53]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [32, 19, 25]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [19, 25]
+	Elements larger than the split: []
+	Elements equal to the split: [32]
+2020-08-03 22:00:50	The 3th element is: 32
+2020-08-03 22:00:50	The built in python sort and list indexing found: 32
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 61
+	Elements smaller than the split: [32, 19, 25, 53]
+	Elements larger than the split: [76, 73, 66, 98, 78, 63, 84, 89]
+	Elements equal to the split: [61]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [32, 19, 25, 53]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [19, 25]
+	Elements larger than the split: [53]
+	Elements equal to the split: [32]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [53]
+	Return the one element list, 53
+2020-08-03 22:00:50	The built in python sort and list indexing found: 53
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [76, 73, 32, 66, 19, 61, 63, 25, 53]
+	Elements larger than the split: [98, 84, 89]
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [76, 73, 32, 66, 19, 61, 63, 25, 53]
+	The randomly selected split element is: 76
+	Elements smaller than the split: [73, 32, 66, 19, 61, 63, 25, 53]
+	Elements larger than the split: []
+	Elements equal to the split: [76]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [73, 32, 66, 19, 61, 63, 25, 53]
+	The randomly selected split element is: 73
+	Elements smaller than the split: [32, 66, 19, 61, 63, 25, 53]
+	Elements larger than the split: []
+	Elements equal to the split: [73]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [32, 66, 19, 61, 63, 25, 53]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [19, 25]
+	Elements larger than the split: [66, 61, 63, 53]
+	Elements equal to the split: [32]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [66, 61, 63, 53]
+	The randomly selected split element is: 53
+	Elements smaller than the split: []
+	Elements larger than the split: [66, 61, 63]
+	Elements equal to the split: [53]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [66, 61, 63]
+	The randomly selected split element is: 66
+	Elements smaller than the split: [61, 63]
+	Elements larger than the split: []
+	Elements equal to the split: [66]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [61, 63]
+	The randomly selected split element is: 61
+	Elements smaller than the split: []
+	Elements larger than the split: [63]
+	Elements equal to the split: [61]
+2020-08-03 22:00:50	The 1th element is: 61
+2020-08-03 22:00:50	The built in python sort and list indexing found: 61
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [19, 25]
+	Elements larger than the split: [76, 73, 66, 61, 98, 78, 63, 84, 89, 53]
+	Elements equal to the split: [32]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [76, 73, 66, 61, 98, 78, 63, 84, 89, 53]
+	The randomly selected split element is: 66
+	Elements smaller than the split: [61, 63, 53]
+	Elements larger than the split: [76, 73, 98, 78, 84, 89]
+	Elements equal to the split: [66]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [61, 63, 53]
+	The randomly selected split element is: 63
+	Elements smaller than the split: [61, 53]
+	Elements larger than the split: []
+	Elements equal to the split: [63]
+2020-08-03 22:00:50	The 3th element is: 63
+2020-08-03 22:00:50	The built in python sort and list indexing found: 63
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 84
+	Elements smaller than the split: [76, 73, 32, 66, 19, 61, 78, 63, 25, 53]
+	Elements larger than the split: [98, 89]
+	Elements equal to the split: [84]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [76, 73, 32, 66, 19, 61, 78, 63, 25, 53]
+	The randomly selected split element is: 63
+	Elements smaller than the split: [32, 19, 61, 25, 53]
+	Elements larger than the split: [76, 73, 66, 78]
+	Elements equal to the split: [63]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [76, 73, 66, 78]
+	The randomly selected split element is: 73
+	Elements smaller than the split: [66]
+	Elements larger than the split: [76, 78]
+	Elements equal to the split: [73]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [66]
+	Return the one element list, 66
+2020-08-03 22:00:50	The built in python sort and list indexing found: 66
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 63
+	Elements smaller than the split: [32, 19, 61, 25, 53]
+	Elements larger than the split: [76, 73, 66, 98, 78, 84, 89]
+	Elements equal to the split: [63]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [76, 73, 66, 98, 78, 84, 89]
+	The randomly selected split element is: 66
+	Elements smaller than the split: []
+	Elements larger than the split: [76, 73, 98, 78, 84, 89]
+	Elements equal to the split: [66]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [76, 73, 98, 78, 84, 89]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [76, 73]
+	Elements larger than the split: [98, 84, 89]
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [76, 73]
+	The randomly selected split element is: 73
+	Elements smaller than the split: []
+	Elements larger than the split: [76]
+	Elements equal to the split: [73]
+2020-08-03 22:00:50	The 1th element is: 73
+2020-08-03 22:00:50	The built in python sort and list indexing found: 73
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 9th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [76, 73, 32, 66, 19, 61, 63, 25, 53]
+	Elements larger than the split: [98, 84, 89]
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 9th element of [76, 73, 32, 66, 19, 61, 63, 25, 53]
+	The randomly selected split element is: 61
+	Elements smaller than the split: [32, 19, 25, 53]
+	Elements larger than the split: [76, 73, 66, 63]
+	Elements equal to the split: [61]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [76, 73, 66, 63]
+	The randomly selected split element is: 66
+	Elements smaller than the split: [63]
+	Elements larger than the split: [76, 73]
+	Elements equal to the split: [66]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [76, 73]
+	The randomly selected split element is: 76
+	Elements smaller than the split: [73]
+	Elements larger than the split: []
+	Elements equal to the split: [76]
+2020-08-03 22:00:50	The 2th element is: 76
+2020-08-03 22:00:50	The built in python sort and list indexing found: 76
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 10th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [19, 25]
+	Elements larger than the split: [76, 73, 66, 61, 98, 78, 63, 84, 89, 53]
+	Elements equal to the split: [32]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [76, 73, 66, 61, 98, 78, 63, 84, 89, 53]
+	The randomly selected split element is: 53
+	Elements smaller than the split: []
+	Elements larger than the split: [76, 73, 66, 61, 98, 78, 63, 84, 89]
+	Elements equal to the split: [53]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [76, 73, 66, 61, 98, 78, 63, 84, 89]
+	The randomly selected split element is: 61
+	Elements smaller than the split: []
+	Elements larger than the split: [76, 73, 66, 98, 78, 63, 84, 89]
+	Elements equal to the split: [61]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [76, 73, 66, 98, 78, 63, 84, 89]
+	The randomly selected split element is: 76
+	Elements smaller than the split: [73, 66, 63]
+	Elements larger than the split: [98, 78, 84, 89]
+	Elements equal to the split: [76]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [98, 78, 84, 89]
+	The randomly selected split element is: 78
+	Elements smaller than the split: []
+	Elements larger than the split: [98, 84, 89]
+	Elements equal to the split: [78]
+2020-08-03 22:00:50	The 1th element is: 78
+2020-08-03 22:00:50	The built in python sort and list indexing found: 78
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 11th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 61
+	Elements smaller than the split: [32, 19, 25, 53]
+	Elements larger than the split: [76, 73, 66, 98, 78, 63, 84, 89]
+	Elements equal to the split: [61]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [76, 73, 66, 98, 78, 63, 84, 89]
+	The randomly selected split element is: 89
+	Elements smaller than the split: [76, 73, 66, 78, 63, 84]
+	Elements larger than the split: [98]
+	Elements equal to the split: [89]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [76, 73, 66, 78, 63, 84]
+	The randomly selected split element is: 63
+	Elements smaller than the split: []
+	Elements larger than the split: [76, 73, 66, 78, 84]
+	Elements equal to the split: [63]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [76, 73, 66, 78, 84]
+	The randomly selected split element is: 84
+	Elements smaller than the split: [76, 73, 66, 78]
+	Elements larger than the split: []
+	Elements equal to the split: [84]
+2020-08-03 22:00:50	The 5th element is: 84
+2020-08-03 22:00:50	The built in python sort and list indexing found: 84
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 12th element of [76, 73, 32, 66, 19, 61, 98, 78, 63, 84, 25, 89, 53]
+	The randomly selected split element is: 53
+	Elements smaller than the split: [32, 19, 25]
+	Elements larger than the split: [76, 73, 66, 61, 98, 78, 63, 84, 89]
+	Elements equal to the split: [53]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [76, 73, 66, 61, 98, 78, 63, 84, 89]
+	The randomly selected split element is: 63
+	Elements smaller than the split: [61]
+	Elements larger than the split: [76, 73, 66, 98, 78, 84, 89]
+	Elements equal to the split: [63]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [76, 73, 66, 98, 78, 84, 89]
+	The randomly selected split element is: 66
+	Elements smaller than the split: []
+	Elements larger than the split: [76, 73, 98, 78, 84, 89]
+	Elements equal to the split: [66]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [76, 73, 98, 78, 84, 89]
+	The randomly selected split element is: 84
+	Elements smaller than the split: [76, 73, 78]
+	Elements larger than the split: [98, 89]
+	Elements equal to the split: [84]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [98, 89]
+	The randomly selected split element is: 98
+	Elements smaller than the split: [89]
+	Elements larger than the split: []
+	Elements equal to the split: [98]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [89]
+	Return the one element list, 89
+2020-08-03 22:00:50	The built in python sort and list indexing found: 89
+	
+Test 1 14
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 74
+	Elements smaller than the split: [31, 7, 66, 39, 68, 38, 25, 49, 58, 32, 49]
+	Elements larger than the split: [78, 94]
+	Elements equal to the split: [74]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [31, 7, 66, 39, 68, 38, 25, 49, 58, 32, 49]
+	The randomly selected split element is: 7
+	Elements smaller than the split: []
+	Elements larger than the split: [31, 66, 39, 68, 38, 25, 49, 58, 32, 49]
+	Elements equal to the split: [7]
+2020-08-03 22:00:50	The 1th element is: 7
+2020-08-03 22:00:50	The built in python sort and list indexing found: 7
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [31, 7, 25]
+	Elements larger than the split: [78, 66, 39, 68, 38, 94, 49, 74, 58, 49]
+	Elements equal to the split: [32]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [31, 7, 25]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [7]
+	Elements larger than the split: [31]
+	Elements equal to the split: [25]
+2020-08-03 22:00:50	The 2th element is: 25
+2020-08-03 22:00:50	The built in python sort and list indexing found: 25
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 68
+	Elements smaller than the split: [31, 7, 66, 39, 38, 25, 49, 58, 32, 49]
+	Elements larger than the split: [78, 94, 74]
+	Elements equal to the split: [68]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [31, 7, 66, 39, 38, 25, 49, 58, 32, 49]
+	The randomly selected split element is: 66
+	Elements smaller than the split: [31, 7, 39, 38, 25, 49, 58, 32, 49]
+	Elements larger than the split: []
+	Elements equal to the split: [66]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [31, 7, 39, 38, 25, 49, 58, 32, 49]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [31, 7, 39, 38, 25, 32]
+	Elements larger than the split: [58]
+	Elements equal to the split: [49, 49]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [31, 7, 39, 38, 25, 32]
+	The randomly selected split element is: 38
+	Elements smaller than the split: [31, 7, 25, 32]
+	Elements larger than the split: [39]
+	Elements equal to the split: [38]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [31, 7, 25, 32]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [7]
+	Elements larger than the split: [31, 32]
+	Elements equal to the split: [25]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [31, 32]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [31]
+	Elements larger than the split: []
+	Elements equal to the split: [32]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [31]
+	Return the one element list, 31
+2020-08-03 22:00:50	The built in python sort and list indexing found: 31
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [31, 7, 39, 38, 25, 32]
+	Elements larger than the split: [78, 66, 68, 94, 74, 58]
+	Elements equal to the split: [49, 49]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [31, 7, 39, 38, 25, 32]
+	The randomly selected split element is: 39
+	Elements smaller than the split: [31, 7, 38, 25, 32]
+	Elements larger than the split: []
+	Elements equal to the split: [39]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [31, 7, 38, 25, 32]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [31, 7, 25]
+	Elements larger than the split: [38]
+	Elements equal to the split: [32]
+2020-08-03 22:00:50	The 4th element is: 32
+2020-08-03 22:00:50	The built in python sort and list indexing found: 32
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [7]
+	Elements larger than the split: [31, 78, 66, 39, 68, 38, 94, 49, 74, 58, 32, 49]
+	Elements equal to the split: [25]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [31, 78, 66, 39, 68, 38, 94, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 66
+	Elements smaller than the split: [31, 39, 38, 49, 58, 32, 49]
+	Elements larger than the split: [78, 68, 94, 74]
+	Elements equal to the split: [66]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [31, 39, 38, 49, 58, 32, 49]
+	The randomly selected split element is: 31
+	Elements smaller than the split: []
+	Elements larger than the split: [39, 38, 49, 58, 32, 49]
+	Elements equal to the split: [31]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [39, 38, 49, 58, 32, 49]
+	The randomly selected split element is: 58
+	Elements smaller than the split: [39, 38, 49, 32, 49]
+	Elements larger than the split: []
+	Elements equal to the split: [58]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [39, 38, 49, 32, 49]
+	The randomly selected split element is: 32
+	Elements smaller than the split: []
+	Elements larger than the split: [39, 38, 49, 49]
+	Elements equal to the split: [32]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [39, 38, 49, 49]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [39, 38]
+	Elements larger than the split: []
+	Elements equal to the split: [49, 49]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [39, 38]
+	The randomly selected split element is: 38
+	Elements smaller than the split: []
+	Elements larger than the split: [39]
+	Elements equal to the split: [38]
+2020-08-03 22:00:50	The 1th element is: 38
+2020-08-03 22:00:50	The built in python sort and list indexing found: 38
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 58
+	Elements smaller than the split: [31, 7, 39, 38, 25, 49, 32, 49]
+	Elements larger than the split: [78, 66, 68, 94, 74]
+	Elements equal to the split: [58]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [31, 7, 39, 38, 25, 49, 32, 49]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [7]
+	Elements larger than the split: [31, 39, 38, 49, 32, 49]
+	Elements equal to the split: [25]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [31, 39, 38, 49, 32, 49]
+	The randomly selected split element is: 38
+	Elements smaller than the split: [31, 32]
+	Elements larger than the split: [39, 49, 49]
+	Elements equal to the split: [38]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [39, 49, 49]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [39]
+	Elements larger than the split: []
+	Elements equal to the split: [49, 49]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [39]
+	Return the one element list, 39
+2020-08-03 22:00:50	The built in python sort and list indexing found: 39
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 68
+	Elements smaller than the split: [31, 7, 66, 39, 38, 25, 49, 58, 32, 49]
+	Elements larger than the split: [78, 94, 74]
+	Elements equal to the split: [68]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [31, 7, 66, 39, 38, 25, 49, 58, 32, 49]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [31, 7, 25]
+	Elements larger than the split: [66, 39, 38, 49, 58, 49]
+	Elements equal to the split: [32]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [66, 39, 38, 49, 58, 49]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [39, 38]
+	Elements larger than the split: [66, 58]
+	Elements equal to the split: [49, 49]
+2020-08-03 22:00:50	The 3th element is: 49
+2020-08-03 22:00:50	The built in python sort and list indexing found: 49
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 31
+	Elements smaller than the split: [7, 25]
+	Elements larger than the split: [78, 66, 39, 68, 38, 94, 49, 74, 58, 32, 49]
+	Elements equal to the split: [31]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [78, 66, 39, 68, 38, 94, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [39, 38, 32]
+	Elements larger than the split: [78, 66, 68, 94, 74, 58]
+	Elements equal to the split: [49, 49]
+2020-08-03 22:00:50	The 5th element is: 49
+2020-08-03 22:00:50	The built in python sort and list indexing found: 49
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 9th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [31, 7, 66, 39, 68, 38, 25, 49, 74, 58, 32, 49]
+	Elements larger than the split: [94]
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 9th element of [31, 7, 66, 39, 68, 38, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 38
+	Elements smaller than the split: [31, 7, 25, 32]
+	Elements larger than the split: [66, 39, 68, 49, 74, 58, 49]
+	Elements equal to the split: [38]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [66, 39, 68, 49, 74, 58, 49]
+	The randomly selected split element is: 68
+	Elements smaller than the split: [66, 39, 49, 58, 49]
+	Elements larger than the split: [74]
+	Elements equal to the split: [68]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [66, 39, 49, 58, 49]
+	The randomly selected split element is: 39
+	Elements smaller than the split: []
+	Elements larger than the split: [66, 49, 58, 49]
+	Elements equal to the split: [39]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [66, 49, 58, 49]
+	The randomly selected split element is: 58
+	Elements smaller than the split: [49, 49]
+	Elements larger than the split: [66]
+	Elements equal to the split: [58]
+2020-08-03 22:00:50	The 3th element is: 58
+2020-08-03 22:00:50	The built in python sort and list indexing found: 58
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 10th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [31, 7, 39, 38, 25, 32]
+	Elements larger than the split: [78, 66, 68, 94, 74, 58]
+	Elements equal to the split: [49, 49]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [78, 66, 68, 94, 74, 58]
+	The randomly selected split element is: 94
+	Elements smaller than the split: [78, 66, 68, 74, 58]
+	Elements larger than the split: []
+	Elements equal to the split: [94]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [78, 66, 68, 74, 58]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [66, 68, 74, 58]
+	Elements larger than the split: []
+	Elements equal to the split: [78]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [66, 68, 74, 58]
+	The randomly selected split element is: 68
+	Elements smaller than the split: [66, 58]
+	Elements larger than the split: [74]
+	Elements equal to the split: [68]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [66, 58]
+	The randomly selected split element is: 58
+	Elements smaller than the split: []
+	Elements larger than the split: [66]
+	Elements equal to the split: [58]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [66]
+	Return the one element list, 66
+2020-08-03 22:00:50	The built in python sort and list indexing found: 66
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 11th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 58
+	Elements smaller than the split: [31, 7, 39, 38, 25, 49, 32, 49]
+	Elements larger than the split: [78, 66, 68, 94, 74]
+	Elements equal to the split: [58]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [78, 66, 68, 94, 74]
+	The randomly selected split element is: 94
+	Elements smaller than the split: [78, 66, 68, 74]
+	Elements larger than the split: []
+	Elements equal to the split: [94]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [78, 66, 68, 74]
+	The randomly selected split element is: 68
+	Elements smaller than the split: [66]
+	Elements larger than the split: [78, 74]
+	Elements equal to the split: [68]
+2020-08-03 22:00:50	The 2th element is: 68
+2020-08-03 22:00:50	The built in python sort and list indexing found: 68
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 12th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 38
+	Elements smaller than the split: [31, 7, 25, 32]
+	Elements larger than the split: [78, 66, 39, 68, 94, 49, 74, 58, 49]
+	Elements equal to the split: [38]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [78, 66, 39, 68, 94, 49, 74, 58, 49]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [39]
+	Elements larger than the split: [78, 66, 68, 94, 74, 58]
+	Elements equal to the split: [49, 49]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [78, 66, 68, 94, 74, 58]
+	The randomly selected split element is: 66
+	Elements smaller than the split: [58]
+	Elements larger than the split: [78, 68, 94, 74]
+	Elements equal to the split: [66]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [78, 68, 94, 74]
+	The randomly selected split element is: 94
+	Elements smaller than the split: [78, 68, 74]
+	Elements larger than the split: []
+	Elements equal to the split: [94]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [78, 68, 74]
+	The randomly selected split element is: 74
+	Elements smaller than the split: [68]
+	Elements larger than the split: [78]
+	Elements equal to the split: [74]
+2020-08-03 22:00:50	The 2th element is: 74
+2020-08-03 22:00:50	The built in python sort and list indexing found: 74
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 13th element of [31, 7, 78, 66, 39, 68, 38, 94, 25, 49, 74, 58, 32, 49]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [31, 7, 25]
+	Elements larger than the split: [78, 66, 39, 68, 38, 94, 49, 74, 58, 49]
+	Elements equal to the split: [32]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 9th element of [78, 66, 39, 68, 38, 94, 49, 74, 58, 49]
+	The randomly selected split element is: 68
+	Elements smaller than the split: [66, 39, 38, 49, 58, 49]
+	Elements larger than the split: [78, 94, 74]
+	Elements equal to the split: [68]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [78, 94, 74]
+	The randomly selected split element is: 94
+	Elements smaller than the split: [78, 74]
+	Elements larger than the split: []
+	Elements equal to the split: [94]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [78, 74]
+	The randomly selected split element is: 78
+	Elements smaller than the split: [74]
+	Elements larger than the split: []
+	Elements equal to the split: [78]
+2020-08-03 22:00:50	The 2th element is: 78
+2020-08-03 22:00:50	The built in python sort and list indexing found: 78
+		select function successfully finds the kth element
+2020-08-03 22:00:50	!!!PASS!!!
+2020-08-03 22:00:50	2. Testing the quicksort function for quicksorting using our kth element selector to smartly pick our pivot element, comparing the results to the builtin python list sort
+	
+Test 2 1
+2020-08-03 22:00:50	Begin quicksort function on [67]
+2020-08-03 22:00:50	There is only one element in the list: [67]
+	The built in python sort function returned: [67]
+	
+Test 2 2
+2020-08-03 22:00:50	Begin quicksort function on [23, 17]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [17, 23]
+	The built in python sort function returned: [17, 23]
+	
+Test 2 3
+2020-08-03 22:00:50	Begin quicksort function on [33, 62, 2]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [2, 33, 62]
+	The built in python sort function returned: [2, 33, 62]
+	
+Test 2 4
+2020-08-03 22:00:50	Begin quicksort function on [85, 43, 18, 17]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [85, 43, 18, 17]
+	The randomly selected split element is: 43
+	Elements smaller than the split: [18, 17]
+	Elements larger than the split: [85]
+	Elements equal to the split: [43]
+2020-08-03 22:00:50	The 3th element is: 43
+	Returning to the quicksort function, using 43 as our split point
+	Elements smaller than the split: [18, 17]
+	Elements larger than the split: [85]
+	Elements equal to the split: [43]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [18, 17]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [17, 18]
+2020-08-03 22:00:50	Begin quicksort function on [85]
+2020-08-03 22:00:50	There is only one element in the list: [85]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [17, 18]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [17, 18]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [17, 18, 43, 85]
+	The built in python sort function returned: [17, 18, 43, 85]
+	
+Test 2 5
+2020-08-03 22:00:50	Begin quicksort function on [36, 60, 27, 90, 84]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [36, 60, 27, 90, 84]
+	The randomly selected split element is: 27
+	Elements smaller than the split: []
+	Elements larger than the split: [36, 60, 90, 84]
+	Elements equal to the split: [27]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [36, 60, 90, 84]
+	The randomly selected split element is: 36
+	Elements smaller than the split: []
+	Elements larger than the split: [60, 90, 84]
+	Elements equal to the split: [36]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [60, 90, 84]
+	The randomly selected split element is: 90
+	Elements smaller than the split: [60, 84]
+	Elements larger than the split: []
+	Elements equal to the split: [90]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [60, 84]
+	The randomly selected split element is: 60
+	Elements smaller than the split: []
+	Elements larger than the split: [84]
+	Elements equal to the split: [60]
+2020-08-03 22:00:50	The 1th element is: 60
+	Returning to the quicksort function, using 60 as our split point
+	Elements smaller than the split: [36, 27]
+	Elements larger than the split: [90, 84]
+	Elements equal to the split: [60]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [36, 27]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [27, 36]
+2020-08-03 22:00:50	Begin quicksort function on [90, 84]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [84, 90]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [27, 36]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [27, 36]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [27, 36, 60, 84, 90]
+	The built in python sort function returned: [27, 36, 60, 84, 90]
+	
+Test 2 6
+2020-08-03 22:00:50	Begin quicksort function on [53, 3, 36, 24, 5, 49]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [53, 3, 36, 24, 5, 49]
+	The randomly selected split element is: 3
+	Elements smaller than the split: []
+	Elements larger than the split: [53, 36, 24, 5, 49]
+	Elements equal to the split: [3]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [53, 36, 24, 5, 49]
+	The randomly selected split element is: 53
+	Elements smaller than the split: [36, 24, 5, 49]
+	Elements larger than the split: []
+	Elements equal to the split: [53]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [36, 24, 5, 49]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [36, 24, 5]
+	Elements larger than the split: []
+	Elements equal to the split: [49]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [36, 24, 5]
+	The randomly selected split element is: 24
+	Elements smaller than the split: [5]
+	Elements larger than the split: [36]
+	Elements equal to the split: [24]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [36]
+	Return the one element list, 36
+	Returning to the quicksort function, using 36 as our split point
+	Elements smaller than the split: [3, 24, 5]
+	Elements larger than the split: [53, 49]
+	Elements equal to the split: [36]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [3, 24, 5]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [3, 5, 24]
+2020-08-03 22:00:50	Begin quicksort function on [53, 49]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [49, 53]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [3, 5, 24]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [3, 5, 24]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [3, 5, 24, 36, 49, 53]
+	The built in python sort function returned: [3, 5, 24, 36, 49, 53]
+	
+Test 2 7
+2020-08-03 22:00:50	Begin quicksort function on [89, 34, 89, 4, 13, 65, 32]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [89, 34, 89, 4, 13, 65, 32]
+	The randomly selected split element is: 32
+	Elements smaller than the split: [4, 13]
+	Elements larger than the split: [89, 34, 89, 65]
+	Elements equal to the split: [32]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [89, 34, 89, 65]
+	The randomly selected split element is: 89
+	Elements smaller than the split: [34, 65]
+	Elements larger than the split: []
+	Elements equal to the split: [89, 89]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [34, 65]
+	The randomly selected split element is: 34
+	Elements smaller than the split: []
+	Elements larger than the split: [65]
+	Elements equal to the split: [34]
+2020-08-03 22:00:50	The 1th element is: 34
+	Returning to the quicksort function, using 34 as our split point
+	Elements smaller than the split: [4, 13, 32]
+	Elements larger than the split: [89, 89, 65]
+	Elements equal to the split: [34]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [4, 13, 32]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [4, 13, 32]
+2020-08-03 22:00:50	Begin quicksort function on [89, 89, 65]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [65, 89, 89]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [4, 13, 32]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [4, 13, 32]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [4, 13, 32, 34, 65, 89, 89]
+	The built in python sort function returned: [4, 13, 32, 34, 65, 89, 89]
+	
+Test 2 8
+2020-08-03 22:00:50	Begin quicksort function on [91, 29, 86, 23, 39, 48, 44, 23]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [91, 29, 86, 23, 39, 48, 44, 23]
+	The randomly selected split element is: 44
+	Elements smaller than the split: [29, 23, 39, 23]
+	Elements larger than the split: [91, 86, 48]
+	Elements equal to the split: [44]
+2020-08-03 22:00:50	The 5th element is: 44
+	Returning to the quicksort function, using 44 as our split point
+	Elements smaller than the split: [29, 23, 39, 23]
+	Elements larger than the split: [91, 86, 48]
+	Elements equal to the split: [44]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [29, 23, 39, 23]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [29, 23, 39, 23]
+	The randomly selected split element is: 23
+	Elements smaller than the split: []
+	Elements larger than the split: [29, 39]
+	Elements equal to the split: [23, 23]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [29, 39]
+	The randomly selected split element is: 39
+	Elements smaller than the split: [29]
+	Elements larger than the split: []
+	Elements equal to the split: [39]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [29]
+	Return the one element list, 29
+	Returning to the quicksort function, using 29 as our split point
+	Elements smaller than the split: [23, 23]
+	Elements larger than the split: [39]
+	Elements equal to the split: [29]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [23, 23]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [23, 23]
+2020-08-03 22:00:50	Begin quicksort function on [39]
+2020-08-03 22:00:50	There is only one element in the list: [39]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [23, 23]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [23, 23]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [23, 23, 29, 39]
+2020-08-03 22:00:50	Begin quicksort function on [91, 86, 48]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [48, 86, 91]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [23, 23, 29, 39]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [23, 23, 29, 39]
+	The randomly selected split element is: 29
+	Elements smaller than the split: [23, 23]
+	Elements larger than the split: [39]
+	Elements equal to the split: [29]
+2020-08-03 22:00:50	The 3th element is: 29
+	Returning to the quicksort function, using 29 as our split point
+	Elements smaller than the split: [23, 23]
+	Elements larger than the split: [39]
+	Elements equal to the split: [29]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [23, 23]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [23, 23]
+2020-08-03 22:00:50	Begin quicksort function on [39]
+2020-08-03 22:00:50	There is only one element in the list: [39]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [23, 23]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [23, 23]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [23, 23, 29, 39]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [23, 23, 29, 39, 44, 48, 86, 91]
+	The built in python sort function returned: [23, 23, 29, 39, 44, 48, 86, 91]
+	
+Test 2 9
+2020-08-03 22:00:50	Begin quicksort function on [89, 18, 57, 18, 50, 27, 74, 76, 63]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [89, 18, 57, 18, 50, 27, 74, 76, 63]
+	The randomly selected split element is: 18
+	Elements smaller than the split: []
+	Elements larger than the split: [89, 57, 50, 27, 74, 76, 63]
+	Elements equal to the split: [18, 18]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [89, 57, 50, 27, 74, 76, 63]
+	The randomly selected split element is: 76
+	Elements smaller than the split: [57, 50, 27, 74, 63]
+	Elements larger than the split: [89]
+	Elements equal to the split: [76]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [57, 50, 27, 74, 63]
+	The randomly selected split element is: 74
+	Elements smaller than the split: [57, 50, 27, 63]
+	Elements larger than the split: []
+	Elements equal to the split: [74]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [57, 50, 27, 63]
+	The randomly selected split element is: 27
+	Elements smaller than the split: []
+	Elements larger than the split: [57, 50, 63]
+	Elements equal to the split: [27]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [57, 50, 63]
+	The randomly selected split element is: 63
+	Elements smaller than the split: [57, 50]
+	Elements larger than the split: []
+	Elements equal to the split: [63]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [57, 50]
+	The randomly selected split element is: 57
+	Elements smaller than the split: [50]
+	Elements larger than the split: []
+	Elements equal to the split: [57]
+2020-08-03 22:00:50	The 2th element is: 57
+	Returning to the quicksort function, using 57 as our split point
+	Elements smaller than the split: [18, 18, 50, 27]
+	Elements larger than the split: [89, 74, 76, 63]
+	Elements equal to the split: [57]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [18, 18, 50, 27]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [18, 18, 50, 27]
+	The randomly selected split element is: 50
+	Elements smaller than the split: [18, 18, 27]
+	Elements larger than the split: []
+	Elements equal to the split: [50]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [18, 18, 27]
+	The randomly selected split element is: 27
+	Elements smaller than the split: [18, 18]
+	Elements larger than the split: []
+	Elements equal to the split: [27]
+2020-08-03 22:00:50	The 3th element is: 27
+	Returning to the quicksort function, using 27 as our split point
+	Elements smaller than the split: [18, 18]
+	Elements larger than the split: [50]
+	Elements equal to the split: [27]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [18, 18]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [18, 18]
+2020-08-03 22:00:50	Begin quicksort function on [50]
+2020-08-03 22:00:50	There is only one element in the list: [50]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [18, 18]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [18, 18]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [18, 18, 27, 50]
+2020-08-03 22:00:50	Begin quicksort function on [89, 74, 76, 63]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [89, 74, 76, 63]
+	The randomly selected split element is: 63
+	Elements smaller than the split: []
+	Elements larger than the split: [89, 74, 76]
+	Elements equal to the split: [63]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [89, 74, 76]
+	The randomly selected split element is: 76
+	Elements smaller than the split: [74]
+	Elements larger than the split: [89]
+	Elements equal to the split: [76]
+2020-08-03 22:00:50	The 2th element is: 76
+	Returning to the quicksort function, using 76 as our split point
+	Elements smaller than the split: [74, 63]
+	Elements larger than the split: [89]
+	Elements equal to the split: [76]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [74, 63]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [63, 74]
+2020-08-03 22:00:50	Begin quicksort function on [89]
+2020-08-03 22:00:50	There is only one element in the list: [89]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [63, 74]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [63, 74]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [63, 74, 76, 89]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [18, 18, 27, 50]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [18, 18, 27, 50]
+	The randomly selected split element is: 18
+	Elements smaller than the split: []
+	Elements larger than the split: [27, 50]
+	Elements equal to the split: [18, 18]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [27, 50]
+	The randomly selected split element is: 27
+	Elements smaller than the split: []
+	Elements larger than the split: [50]
+	Elements equal to the split: [27]
+2020-08-03 22:00:50	The 1th element is: 27
+	Returning to the quicksort function, using 27 as our split point
+	Elements smaller than the split: [18, 18]
+	Elements larger than the split: [50]
+	Elements equal to the split: [27]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [18, 18]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [18, 18]
+2020-08-03 22:00:50	Begin quicksort function on [50]
+2020-08-03 22:00:50	There is only one element in the list: [50]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [18, 18]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [18, 18]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [18, 18, 27, 50]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [18, 18, 27, 50, 57, 63, 74, 76, 89]
+	The built in python sort function returned: [18, 18, 27, 50, 57, 63, 74, 76, 89]
+	
+Test 2 10
+2020-08-03 22:00:50	Begin quicksort function on [55, 65, 33, 65, 93, 5, 68, 28, 65, 55]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [55, 65, 33, 65, 93, 5, 68, 28, 65, 55]
+	The randomly selected split element is: 65
+	Elements smaller than the split: [55, 33, 5, 28, 55]
+	Elements larger than the split: [93, 68]
+	Elements equal to the split: [65, 65, 65]
+2020-08-03 22:00:50	The 6th element is: 65
+	Returning to the quicksort function, using 65 as our split point
+	Elements smaller than the split: [55, 33, 5, 28, 55]
+	Elements larger than the split: [93, 68]
+	Elements equal to the split: [65, 65, 65]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [55, 33, 5, 28, 55]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [55, 33, 5, 28, 55]
+	The randomly selected split element is: 55
+	Elements smaller than the split: [33, 5, 28]
+	Elements larger than the split: []
+	Elements equal to the split: [55, 55]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [33, 5, 28]
+	The randomly selected split element is: 5
+	Elements smaller than the split: []
+	Elements larger than the split: [33, 28]
+	Elements equal to the split: [5]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [33, 28]
+	The randomly selected split element is: 28
+	Elements smaller than the split: []
+	Elements larger than the split: [33]
+	Elements equal to the split: [28]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [33]
+	Return the one element list, 33
+	Returning to the quicksort function, using 33 as our split point
+	Elements smaller than the split: [5, 28]
+	Elements larger than the split: [55, 55]
+	Elements equal to the split: [33]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [5, 28]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [5, 28]
+2020-08-03 22:00:50	Begin quicksort function on [55, 55]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [55, 55]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [5, 28]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [5, 28]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [5, 28, 33, 55, 55]
+2020-08-03 22:00:50	Begin quicksort function on [93, 68]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [68, 93]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [5, 28, 33, 55, 55]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [5, 28, 33, 55, 55]
+	The randomly selected split element is: 55
+	Elements smaller than the split: [5, 28, 33]
+	Elements larger than the split: []
+	Elements equal to the split: [55, 55]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [5, 28, 33]
+	The randomly selected split element is: 33
+	Elements smaller than the split: [5, 28]
+	Elements larger than the split: []
+	Elements equal to the split: [33]
+2020-08-03 22:00:50	The 3th element is: 33
+	Returning to the quicksort function, using 33 as our split point
+	Elements smaller than the split: [5, 28]
+	Elements larger than the split: [55, 55]
+	Elements equal to the split: [33]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [5, 28]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [5, 28]
+2020-08-03 22:00:50	Begin quicksort function on [55, 55]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [55, 55]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [5, 28]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [5, 28]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [5, 28, 33, 55, 55]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [5, 28, 33, 55, 55, 65, 65, 65, 68, 93]
+	The built in python sort function returned: [5, 28, 33, 55, 55, 65, 65, 65, 68, 93]
+	
+Test 2 11
+2020-08-03 22:00:50	Begin quicksort function on [51, 53, 15, 34, 92, 47, 69, 55, 12, 2, 3]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [51, 53, 15, 34, 92, 47, 69, 55, 12, 2, 3]
+	The randomly selected split element is: 51
+	Elements smaller than the split: [15, 34, 47, 12, 2, 3]
+	Elements larger than the split: [53, 92, 69, 55]
+	Elements equal to the split: [51]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [15, 34, 47, 12, 2, 3]
+	The randomly selected split element is: 15
+	Elements smaller than the split: [12, 2, 3]
+	Elements larger than the split: [34, 47]
+	Elements equal to the split: [15]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [34, 47]
+	The randomly selected split element is: 34
+	Elements smaller than the split: []
+	Elements larger than the split: [47]
+	Elements equal to the split: [34]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [47]
+	Return the one element list, 47
+	Returning to the quicksort function, using 47 as our split point
+	Elements smaller than the split: [15, 34, 12, 2, 3]
+	Elements larger than the split: [51, 53, 92, 69, 55]
+	Elements equal to the split: [47]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [15, 34, 12, 2, 3]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [15, 34, 12, 2, 3]
+	The randomly selected split element is: 12
+	Elements smaller than the split: [2, 3]
+	Elements larger than the split: [15, 34]
+	Elements equal to the split: [12]
+2020-08-03 22:00:50	The 3th element is: 12
+	Returning to the quicksort function, using 12 as our split point
+	Elements smaller than the split: [2, 3]
+	Elements larger than the split: [15, 34]
+	Elements equal to the split: [12]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [2, 3]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [2, 3]
+2020-08-03 22:00:50	Begin quicksort function on [15, 34]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [15, 34]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [2, 3]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [2, 3]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [2, 3, 12, 15, 34]
+2020-08-03 22:00:50	Begin quicksort function on [51, 53, 92, 69, 55]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [51, 53, 92, 69, 55]
+	The randomly selected split element is: 55
+	Elements smaller than the split: [51, 53]
+	Elements larger than the split: [92, 69]
+	Elements equal to the split: [55]
+2020-08-03 22:00:50	The 3th element is: 55
+	Returning to the quicksort function, using 55 as our split point
+	Elements smaller than the split: [51, 53]
+	Elements larger than the split: [92, 69]
+	Elements equal to the split: [55]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [51, 53]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [51, 53]
+2020-08-03 22:00:50	Begin quicksort function on [92, 69]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [69, 92]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [51, 53]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [51, 53]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [51, 53, 55, 69, 92]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [2, 3, 12, 15, 34]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [2, 3, 12, 15, 34]
+	The randomly selected split element is: 12
+	Elements smaller than the split: [2, 3]
+	Elements larger than the split: [15, 34]
+	Elements equal to the split: [12]
+2020-08-03 22:00:50	The 3th element is: 12
+	Returning to the quicksort function, using 12 as our split point
+	Elements smaller than the split: [2, 3]
+	Elements larger than the split: [15, 34]
+	Elements equal to the split: [12]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [2, 3]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [2, 3]
+2020-08-03 22:00:50	Begin quicksort function on [15, 34]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [15, 34]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [2, 3]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [2, 3]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [2, 3, 12, 15, 34]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [2, 3, 12, 15, 34, 47, 51, 53, 55, 69, 92]
+	The built in python sort function returned: [2, 3, 12, 15, 34, 47, 51, 53, 55, 69, 92]
+	
+Test 2 12
+2020-08-03 22:00:50	Begin quicksort function on [57, 50, 56, 76, 3, 22, 93, 52, 49, 17, 54, 61]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [57, 50, 56, 76, 3, 22, 93, 52, 49, 17, 54, 61]
+	The randomly selected split element is: 93
+	Elements smaller than the split: [57, 50, 56, 76, 3, 22, 52, 49, 17, 54, 61]
+	Elements larger than the split: []
+	Elements equal to the split: [93]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [57, 50, 56, 76, 3, 22, 52, 49, 17, 54, 61]
+	The randomly selected split element is: 56
+	Elements smaller than the split: [50, 3, 22, 52, 49, 17, 54]
+	Elements larger than the split: [57, 76, 61]
+	Elements equal to the split: [56]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [50, 3, 22, 52, 49, 17, 54]
+	The randomly selected split element is: 3
+	Elements smaller than the split: []
+	Elements larger than the split: [50, 22, 52, 49, 17, 54]
+	Elements equal to the split: [3]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 6th element of [50, 22, 52, 49, 17, 54]
+	The randomly selected split element is: 17
+	Elements smaller than the split: []
+	Elements larger than the split: [50, 22, 52, 49, 54]
+	Elements equal to the split: [17]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 5th element of [50, 22, 52, 49, 54]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [22]
+	Elements larger than the split: [50, 52, 54]
+	Elements equal to the split: [49]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [50, 52, 54]
+	The randomly selected split element is: 54
+	Elements smaller than the split: [50, 52]
+	Elements larger than the split: []
+	Elements equal to the split: [54]
+2020-08-03 22:00:50	The 3th element is: 54
+	Returning to the quicksort function, using 54 as our split point
+	Elements smaller than the split: [50, 3, 22, 52, 49, 17]
+	Elements larger than the split: [57, 56, 76, 93, 61]
+	Elements equal to the split: [54]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [50, 3, 22, 52, 49, 17]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [50, 3, 22, 52, 49, 17]
+	The randomly selected split element is: 17
+	Elements smaller than the split: [3]
+	Elements larger than the split: [50, 22, 52, 49]
+	Elements equal to the split: [17]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [50, 22, 52, 49]
+	The randomly selected split element is: 22
+	Elements smaller than the split: []
+	Elements larger than the split: [50, 52, 49]
+	Elements equal to the split: [22]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [50, 52, 49]
+	The randomly selected split element is: 50
+	Elements smaller than the split: [49]
+	Elements larger than the split: [52]
+	Elements equal to the split: [50]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [49]
+	Return the one element list, 49
+	Returning to the quicksort function, using 49 as our split point
+	Elements smaller than the split: [3, 22, 17]
+	Elements larger than the split: [50, 52]
+	Elements equal to the split: [49]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [3, 22, 17]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [3, 17, 22]
+2020-08-03 22:00:50	Begin quicksort function on [50, 52]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [50, 52]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [3, 17, 22]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [3, 17, 22]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [3, 17, 22, 49, 50, 52]
+2020-08-03 22:00:50	Begin quicksort function on [57, 56, 76, 93, 61]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [57, 56, 76, 93, 61]
+	The randomly selected split element is: 57
+	Elements smaller than the split: [56]
+	Elements larger than the split: [76, 93, 61]
+	Elements equal to the split: [57]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [76, 93, 61]
+	The randomly selected split element is: 76
+	Elements smaller than the split: [61]
+	Elements larger than the split: [93]
+	Elements equal to the split: [76]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [61]
+	Return the one element list, 61
+	Returning to the quicksort function, using 61 as our split point
+	Elements smaller than the split: [57, 56]
+	Elements larger than the split: [76, 93]
+	Elements equal to the split: [61]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [57, 56]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [56, 57]
+2020-08-03 22:00:50	Begin quicksort function on [76, 93]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [76, 93]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [56, 57]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [56, 57]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [56, 57, 61, 76, 93]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [3, 17, 22, 49, 50, 52]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [3, 17, 22, 49, 50, 52]
+	The randomly selected split element is: 49
+	Elements smaller than the split: [3, 17, 22]
+	Elements larger than the split: [50, 52]
+	Elements equal to the split: [49]
+2020-08-03 22:00:50	The 4th element is: 49
+	Returning to the quicksort function, using 49 as our split point
+	Elements smaller than the split: [3, 17, 22]
+	Elements larger than the split: [50, 52]
+	Elements equal to the split: [49]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [3, 17, 22]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [3, 17, 22]
+2020-08-03 22:00:50	Begin quicksort function on [50, 52]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [50, 52]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [3, 17, 22]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [3, 17, 22]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [3, 17, 22, 49, 50, 52]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [3, 17, 22, 49, 50, 52, 54, 56, 57, 61, 76, 93]
+	The built in python sort function returned: [3, 17, 22, 49, 50, 52, 54, 56, 57, 61, 76, 93]
+	
+Test 2 13
+2020-08-03 22:00:50	Begin quicksort function on [96, 25, 29, 23, 38, 25, 38, 29, 80, 13, 59, 15, 50]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 7th element of [96, 25, 29, 23, 38, 25, 38, 29, 80, 13, 59, 15, 50]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [23, 13, 15]
+	Elements larger than the split: [96, 29, 38, 38, 29, 80, 59, 50]
+	Elements equal to the split: [25, 25]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [96, 29, 38, 38, 29, 80, 59, 50]
+	The randomly selected split element is: 38
+	Elements smaller than the split: [29, 29]
+	Elements larger than the split: [96, 80, 59, 50]
+	Elements equal to the split: [38, 38]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [29, 29]
+	All elements are equivalent, 29
+	Returning to the quicksort function, using 29 as our split point
+	Elements smaller than the split: [25, 23, 25, 13, 15]
+	Elements larger than the split: [96, 38, 38, 80, 59, 50]
+	Elements equal to the split: [29, 29]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [25, 23, 25, 13, 15]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [25, 23, 25, 13, 15]
+	The randomly selected split element is: 15
+	Elements smaller than the split: [13]
+	Elements larger than the split: [25, 23, 25]
+	Elements equal to the split: [15]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [25, 23, 25]
+	The randomly selected split element is: 23
+	Elements smaller than the split: []
+	Elements larger than the split: [25, 25]
+	Elements equal to the split: [23]
+2020-08-03 22:00:50	The 1th element is: 23
+	Returning to the quicksort function, using 23 as our split point
+	Elements smaller than the split: [13, 15]
+	Elements larger than the split: [25, 25]
+	Elements equal to the split: [23]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [13, 15]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [13, 15]
+2020-08-03 22:00:50	Begin quicksort function on [25, 25]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [25, 25]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [13, 15]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [13, 15]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [13, 15, 23, 25, 25]
+2020-08-03 22:00:50	Begin quicksort function on [96, 38, 38, 80, 59, 50]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [96, 38, 38, 80, 59, 50]
+	The randomly selected split element is: 50
+	Elements smaller than the split: [38, 38]
+	Elements larger than the split: [96, 80, 59]
+	Elements equal to the split: [50]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [96, 80, 59]
+	The randomly selected split element is: 80
+	Elements smaller than the split: [59]
+	Elements larger than the split: [96]
+	Elements equal to the split: [80]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [59]
+	Return the one element list, 59
+	Returning to the quicksort function, using 59 as our split point
+	Elements smaller than the split: [38, 38, 50]
+	Elements larger than the split: [96, 80]
+	Elements equal to the split: [59]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [38, 38, 50]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [38, 38, 50]
+2020-08-03 22:00:50	Begin quicksort function on [96, 80]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [80, 96]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [38, 38, 50]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [38, 38, 50]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [38, 38, 50, 59, 80, 96]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [13, 15, 23, 25, 25]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [13, 15, 23, 25, 25]
+	The randomly selected split element is: 25
+	Elements smaller than the split: [13, 15, 23]
+	Elements larger than the split: []
+	Elements equal to the split: [25, 25]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [13, 15, 23]
+	The randomly selected split element is: 23
+	Elements smaller than the split: [13, 15]
+	Elements larger than the split: []
+	Elements equal to the split: [23]
+2020-08-03 22:00:50	The 3th element is: 23
+	Returning to the quicksort function, using 23 as our split point
+	Elements smaller than the split: [13, 15]
+	Elements larger than the split: [25, 25]
+	Elements equal to the split: [23]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [13, 15]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [13, 15]
+2020-08-03 22:00:50	Begin quicksort function on [25, 25]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [25, 25]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [13, 15]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [13, 15]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [13, 15, 23, 25, 25]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [13, 15, 23, 25, 25, 29, 29, 38, 38, 50, 59, 80, 96]
+	The built in python sort function returned: [13, 15, 23, 25, 25, 29, 29, 38, 38, 50, 59, 80, 96]
+	
+Test 2 14
+2020-08-03 22:00:50	Begin quicksort function on [56, 91, 54, 18, 35, 63, 31, 34, 29, 97, 28, 13, 37, 95]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [56, 91, 54, 18, 35, 63, 31, 34, 29, 97, 28, 13, 37, 95]
+	The randomly selected split element is: 56
+	Elements smaller than the split: [54, 18, 35, 31, 34, 29, 28, 13, 37]
+	Elements larger than the split: [91, 63, 97, 95]
+	Elements equal to the split: [56]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [54, 18, 35, 31, 34, 29, 28, 13, 37]
+	The randomly selected split element is: 54
+	Elements smaller than the split: [18, 35, 31, 34, 29, 28, 13, 37]
+	Elements larger than the split: []
+	Elements equal to the split: [54]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 8th element of [18, 35, 31, 34, 29, 28, 13, 37]
+	The randomly selected split element is: 31
+	Elements smaller than the split: [18, 29, 28, 13]
+	Elements larger than the split: [35, 34, 37]
+	Elements equal to the split: [31]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [35, 34, 37]
+	The randomly selected split element is: 34
+	Elements smaller than the split: []
+	Elements larger than the split: [35, 37]
+	Elements equal to the split: [34]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 2th element of [35, 37]
+	The randomly selected split element is: 35
+	Elements smaller than the split: []
+	Elements larger than the split: [37]
+	Elements equal to the split: [35]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [37]
+	Return the one element list, 37
+	Returning to the quicksort function, using 37 as our split point
+	Elements smaller than the split: [18, 35, 31, 34, 29, 28, 13]
+	Elements larger than the split: [56, 91, 54, 63, 97, 95]
+	Elements equal to the split: [37]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [18, 35, 31, 34, 29, 28, 13]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [18, 35, 31, 34, 29, 28, 13]
+	The randomly selected split element is: 28
+	Elements smaller than the split: [18, 13]
+	Elements larger than the split: [35, 31, 34, 29]
+	Elements equal to the split: [28]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [35, 31, 34, 29]
+	The randomly selected split element is: 31
+	Elements smaller than the split: [29]
+	Elements larger than the split: [35, 34]
+	Elements equal to the split: [31]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [29]
+	Return the one element list, 29
+	Returning to the quicksort function, using 29 as our split point
+	Elements smaller than the split: [18, 28, 13]
+	Elements larger than the split: [35, 31, 34]
+	Elements equal to the split: [29]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [18, 28, 13]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [13, 18, 28]
+2020-08-03 22:00:50	Begin quicksort function on [35, 31, 34]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [31, 34, 35]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [13, 18, 28]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [13, 18, 28]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [13, 18, 28, 29, 31, 34, 35]
+2020-08-03 22:00:50	Begin quicksort function on [56, 91, 54, 63, 97, 95]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [56, 91, 54, 63, 97, 95]
+	The randomly selected split element is: 54
+	Elements smaller than the split: []
+	Elements larger than the split: [56, 91, 63, 97, 95]
+	Elements equal to the split: [54]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [56, 91, 63, 97, 95]
+	The randomly selected split element is: 63
+	Elements smaller than the split: [56]
+	Elements larger than the split: [91, 97, 95]
+	Elements equal to the split: [63]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [91, 97, 95]
+	The randomly selected split element is: 97
+	Elements smaller than the split: [91, 95]
+	Elements larger than the split: []
+	Elements equal to the split: [97]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [91, 95]
+	The randomly selected split element is: 95
+	Elements smaller than the split: [91]
+	Elements larger than the split: []
+	Elements equal to the split: [95]
+	Look inside the smaller elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 1th element of [91]
+	Return the one element list, 91
+	Returning to the quicksort function, using 91 as our split point
+	Elements smaller than the split: [56, 54, 63]
+	Elements larger than the split: [97, 95]
+	Elements equal to the split: [91]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [56, 54, 63]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [54, 56, 63]
+2020-08-03 22:00:50	Begin quicksort function on [97, 95]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [95, 97]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [54, 56, 63]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [54, 56, 63]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [54, 56, 63, 91, 95, 97]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [13, 18, 28, 29, 31, 34, 35]
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 4th element of [13, 18, 28, 29, 31, 34, 35]
+	The randomly selected split element is: 13
+	Elements smaller than the split: []
+	Elements larger than the split: [18, 28, 29, 31, 34, 35]
+	Elements equal to the split: [13]
+	Look inside the larger elements
+2020-08-03 22:00:50	Begin select function for randomized recursive finding of the 3th element of [18, 28, 29, 31, 34, 35]
+	The randomly selected split element is: 29
+	Elements smaller than the split: [18, 28]
+	Elements larger than the split: [31, 34, 35]
+	Elements equal to the split: [29]
+2020-08-03 22:00:50	The 3th element is: 29
+	Returning to the quicksort function, using 29 as our split point
+	Elements smaller than the split: [13, 18, 28]
+	Elements larger than the split: [31, 34, 35]
+	Elements equal to the split: [29]
+	Now sort the list of smaller elements
+2020-08-03 22:00:50	Begin quicksort function on [13, 18, 28]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [13, 18, 28]
+2020-08-03 22:00:50	Begin quicksort function on [31, 34, 35]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [31, 34, 35]
+	Now sort the list of larger elements
+2020-08-03 22:00:50	Begin quicksort function on [13, 18, 28]
+2020-08-03 22:00:50	Less than 4 elemengs, sorted by minimums: [13, 18, 28]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [13, 18, 28, 29, 31, 34, 35]
+	Concatenate the resulting lists
+2020-08-03 22:00:50	The sorted result is [13, 18, 28, 29, 31, 34, 35, 37, 54, 56, 63, 91, 95, 97]
+	The built in python sort function returned: [13, 18, 28, 29, 31, 34, 35, 37, 54, 56, 63, 91, 95, 97]
+	  quicksort function successfully sorts lists
+2020-08-03 22:00:50	!!!PASS!!!
+	PASSED ALL TESTS
+	#####
+
+
+2020-08-03 22:00:50	Exiting
