@@ -1,0 +1,7 @@
+2020-08-03 21:09:42	CS 430 Summer 2020 Final Project, Emma Foley
+
+	#####
+
+
+2020-08-03 21:09:42	Starting user prompts
+2020-08-03 21:09:44	User chose to exit the program
