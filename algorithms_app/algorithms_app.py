@@ -7,14 +7,17 @@ from datetime import datetime
 ####global variables#####
 log_filename = datetime.now().strftime("%Y%m%d_%H.%M.%S") + ".txt"
 log_pathstring = str(Path("./logs/" + log_filename))
+break_message = "#####\n\n"
 
 ####################
 
 def main ():
+	log_message("CS 430 Summer 2020 Final Project, Emma Foley\n")
 	prompt()
+	log_message("Exiting")
 
 ####################logging functions###################
-def log_message(message, timestamp):
+def log_message(message, timestamp = True):
 	message = "	" + message + "\n"
 	with open(log_pathstring, "a+") as file:
 		if(timestamp):
@@ -28,7 +31,8 @@ def log_message(message, timestamp):
 def prompt():
 	print("Welcome to the CS 430 summer project!")
 	message = "Starting user prompts"
-	log_message(message,True)
+	log_message(break_message, False)
+	log_message(message)
 
 	done = False
 	print_mode = False
@@ -41,7 +45,7 @@ def prompt():
 		""")
 		if(response == 'c'):
 			message = message + "exit the program"
-			log_message(message,True)
+			log_message(message)
 			exit()
 			done = True
 		elif(response == 'a'):
@@ -64,6 +68,7 @@ def user_manual_or_random():
     done = False
 #     print_mode = False
     while(done == False):
+            message = "User chose to "
             response = str()
             try:
                 response = str(input("""Choose whether you want to enter a list manually or have one randomly generated:
@@ -74,18 +79,27 @@ def user_manual_or_random():
             except Exception as error:
                 print(error)
             if(response == 'c'):
+                    message = message + "exit the program"
+                    log_message(message)
                     exit()
                     done = True
             elif(response == 'a'):
+                    message = message + "randomly generate a list: "
                     n = user_random_list_params()
                     unsorted_list = random_unsorted_list(n,100)
+                    message = message + str(unsorted_list)
+                    log_message(message, False)
                     return unsorted_list
                     done = True
             elif(response == 'b'):
+                    message = message + "enter a list of integers: " 
                     unsorted_list = user_entered_list()
+                    message = message + str(unsorted_list)
+                    log_message(message, False)
                     return unsorted_list
                     done = True
             else:
+                    log_message("Invalid user entry", True)
                     print("Try again\n")
                     done = True
   
