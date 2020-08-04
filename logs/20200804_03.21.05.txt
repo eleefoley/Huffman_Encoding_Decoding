@@ -1,0 +1,22 @@
+2020-08-04 03:21:05	CS 430 Summer 2020 Final Project, Emma Foley
+
+	#####
+
+
+2020-08-04 03:21:05	Starting user prompts
+	User chose to  pick a function
+	#####
+
+
+2020-08-04 03:21:08	Huffman coding the first chapter of Pride and Prejudice
+2020-08-04 03:21:08	The most frequently used characters are 
+  char  freq
+0        813
+1    e   406
+2    t   278
+3    o   278
+4    n   245
+	Make a priority queue of nodes that consist of a character, frequency, and binary children
+	Remove the two least frequent characters from the queue, add their freqs and concat their characters.  Make a node of this with the two least frequent chars as right and left children respectively.  Repeat
+2020-08-04 03:21:08	Get the root node: (not leaf : 4408)
+	Printing the tree
