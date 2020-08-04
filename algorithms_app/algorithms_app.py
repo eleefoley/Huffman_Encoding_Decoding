@@ -2,30 +2,57 @@ import math
 import random
 import pandas as pd
 from pathlib import Path
+from datetime import datetime
+
+####global variables#####
+log_filename = datetime.now().strftime("%Y%m%d_%H.%M.%S") + ".txt"
+log_pathstring = str(Path("./logs/" + log_filename))
+
+####################
 
 def main ():
 	prompt()
+
+####################logging functions###################
+def log_message(message, timestamp):
+	message = "	" + message + "\n"
+	with open(log_pathstring, "a+") as file:
+		if(timestamp):
+			lines = [datetime.now().strftime("%Y-%m-%d %H:%M:%S"),message]
+			file.writelines(lines)
+		else:
+			file.write(message)
 
 #####################ui functions###################
 # input from the user to determine which function(s) to go through
 def prompt():
 	print("Welcome to the CS 430 summer project!")
+	message = "Starting user prompts"
+	log_message(message,True)
+
 	done = False
 	print_mode = False
 	while(done == False):
+		message = "User chose to "
 		response = input("""Type the letter for what you would like to do:
 			a:  Run in test mode
 			b:  Choose a function to run
 			c:  Exit the program
 		""")
 		if(response == 'c'):
+			message = message + "exit the program"
+			log_message(message,True)
 			exit()
 			done = True
 		elif(response == 'a'):
+			message = message + "run in test mode"
+			log_message(message, False)
 			run_tests()
 			done = True
 		elif(response == 'b'):
 			print_mode = True
+			message = message + " pick a function"
+			log_message(message, False)
 			user_choose_a_function(print_mode)
 			done = True
 		else:

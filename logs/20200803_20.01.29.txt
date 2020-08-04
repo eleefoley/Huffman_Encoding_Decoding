@@ -1,0 +1,2 @@
+2020-08-03 20:01:29Starting user prompts
+2020-08-03 20:01:32User chose to exit the program
