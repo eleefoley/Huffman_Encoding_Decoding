@@ -19,6 +19,16 @@ This is a terminal program, where users will be prompted to make selections and 
 
 At this time, 'test mode' only checks part 1&2, comparing the results against the built-in python functions for lists
 
+Huffman coding:
+* imports the first chapter of Pride and Prejudice (found via Project Gutenberg) from a text file
+* creates a frequency table of characters
+* Uses a custom node class with character, frequency, right, and left
+* Uses a priority queue to create a binary tree of these nodes for the algorithm in section 16.3 of Introduction to Algorithms
+* Prints the tree as a list
+* Assigns digits
+
+Decoding is not done and prefix assignment does not appear to be correct
+
 Python
 ======
 This was written in a python virtual environment, running python 3.5.2
