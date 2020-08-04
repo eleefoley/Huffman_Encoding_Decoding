@@ -1,9 +1,0 @@
-2020-08-03 20:16:32	CS 430 Summer 2020 Final Project, Emma Foley
-
-	#####
-
-
-2020-08-03 20:16:32	Starting user prompts
-	User chose to  pick a function
-	User chose to randomly generate a list: [52, 96, 75, 83, 25, 55, 66]
-2020-08-03 20:16:40	Exiting

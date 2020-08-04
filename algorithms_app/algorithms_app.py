@@ -7,57 +7,57 @@ from datetime import datetime
 ####global variables#####
 log_filename = datetime.now().strftime("%Y%m%d_%H.%M.%S") + ".txt"
 log_pathstring = str(Path("./logs/" + log_filename))
-break_messege = "#####\n\n"
+break_message = "#####\n\n"
 
 ####################
 
 def main ():
-	log_messege("CS 430 Summer 2020 Final Project, Emma Foley\n")
+	log_message("CS 430 Summer 2020 Final Project, Emma Foley\n")
 	prompt()
-	log_messege(break_messege, False)
-	log_messege("Exiting")
+	log_message(break_message, False)
+	log_message("Exiting")
 
 ####################logging functions###################
-def log_messege(messege, timestamp = True):
-	messege = "	" + messege + "\n"
+def log_message(message, timestamp = True):
+	message = "	" + message + "\n"
 	with open(log_pathstring, "a+") as file:
 		if(timestamp):
-			lines = [datetime.now().strftime("%Y-%m-%d %H:%M:%S"),messege]
+			lines = [datetime.now().strftime("%Y-%m-%d %H:%M:%S"),message]
 			file.writelines(lines)
 		else:
-			file.write(messege)
+			file.write(message)
 
 #####################ui functions###################
 # input from the user to determine which function(s) to go through
 def prompt():
 	print("Welcome to the CS 430 summer project!")
-	messege = "Starting user prompts"
-	log_messege(break_messege, False)
-	log_messege(messege)
+	message = "Starting user prompts"
+	log_message(break_message, False)
+	log_message(message)
 
 	done = False
 	print_mode = False
 	while(done == False):
-		messege = "User chose to "
+		message = "User chose to "
 		response = input("""Type the letter for what you would like to do:
 			a:  Run in test mode
 			b:  Choose a function to run
 			c:  Exit the program
 		""")
 		if(response == 'c'):
-			messege = messege + "exit the program"
-			log_messege(messege)
+			message = message + "exit the program"
+			log_message(message)
 			exit()
 			done = True
 		elif(response == 'a'):
-			messege = messege + "run in test mode"
-			log_messege(messege, False)
+			message = message + "run in test mode"
+			log_message(message, False)
 			run_tests()
 			done = True
 		elif(response == 'b'):
 			print_mode = True
-			messege = messege + " pick a function"
-			log_messege(messege, False)
+			message = message + " pick a function"
+			log_message(message, False)
 			user_choose_a_function(print_mode)
 			done = True
 		else:
@@ -69,7 +69,7 @@ def user_manual_or_random():
     done = False
 #     print_mode = False
     while(done == False):
-            messege = "User chose to "
+            message = "User chose to "
             response = str()
             try:
                 response = str(input("""Choose whether you want to enter a list manually or have one randomly generated:
@@ -80,27 +80,27 @@ def user_manual_or_random():
             except Exception as error:
                 print(error)
             if(response == 'c'):
-                    messege = messege + "exit the program"
-                    log_messege(messege)
+                    message = message + "exit the program"
+                    log_message(message)
                     exit()
                     done = True
             elif(response == 'a'):
-                    messege = messege + "randomly generate a list: "
+                    message = message + "randomly generate a list: "
                     n = user_random_list_params()
                     unsorted_list = random_unsorted_list(n,100)
-                    messege = messege + str(unsorted_list)
-                    log_messege(messege, False)
+                    message = message + str(unsorted_list)
+                    log_message(message, False)
                     return unsorted_list
                     done = True
             elif(response == 'b'):
-                    messege = messege + "enter a list of integers: " 
+                    message = message + "enter a list of integers: " 
                     unsorted_list = user_entered_list()
-                    messege = messege + str(unsorted_list)
-                    log_messege(messege, False)
+                    message = message + str(unsorted_list)
+                    log_message(message, False)
                     return unsorted_list
                     done = True
             else:
-                    log_messege("Invalid user entry", True)
+                    log_message("Invalid user entry", True)
                     print("Try again\n")
                     done = True
   
@@ -126,19 +126,19 @@ def user_choose_a_function(print_mode):
                     unsorted_list = user_manual_or_random()
                     k = user_choose_k(len(unsorted_list))
                     print("Run that function")
-                    log_messege(break_messege, False)
+                    log_message(break_message, False)
                     print(select(unsorted_list,k,print_mode))
                     done = True
             elif(response == 'b'):
                     unsorted_list = user_manual_or_random()
                     print("Run that function")
-                    log_messege(break_messege, False)
+                    log_message(break_message, False)
                     print(quicksort(unsorted_list,print_mode))
                     done = True
             elif(response == 'c'):
                     print("Huffman encoding")
                     huffman()
-                    log_messege(break_messege, False)
+                    log_message(break_message, False)
                     done = True
             else:
                     print("Try again\n")
@@ -195,20 +195,20 @@ def user_choose_k(n):
 ###### Algorithm Design, Keinberg & Tardos: 13.5 Randomized Divide and Conquer: Median-Finding and Quicksort
 # split = unsorted_list[0]
 def select(S,k, print_mode):
-	log_messege("Begin select function for randomized recursive finding of the " + str(k) + "th element of " + str(S))
+	log_message("Begin select function for randomized recursive finding of the " + str(k) + "th element of " + str(S))
 	if print_mode == True:
 		print("We're looking for the " + str(k) +"th element of " + str(S))
 	if len(S) == 1:
 #         assert k == 0
-		log_messege("Return the one element list, " + str(S[0]), False)
+		log_message("Return the one element list, " + str(S[0]), False)
 		return S[0]
     
 	if len(S) > 1 and all(element == S[0] for element in S):
-		log_messege("All elements are equivalent, " + str(S[0]), False)
+		log_message("All elements are equivalent, " + str(S[0]), False)
 		return S[0]
    
 	split = random.choice(S)
-	log_messege("The randomly selected split element is: " + str(split), False)
+	log_message("The randomly selected split element is: " + str(split), False)
 	if print_mode == True:
 		print("     We choose a random element to compare the others against, " + str(split))
 	s_minus = []
@@ -224,32 +224,34 @@ def select(S,k, print_mode):
  			s_equal.append(i)
     
 	l = len(s_minus)
-	log_messege("Elements smaller than the split: " + str(s_minus), False)
-	log_messege("Elements larger than the split: " + str(s_plus), False)
-	log_messege("Elements equal to the split: " + str(s_equal), False)
+	log_message("Elements smaller than the split: " + str(s_minus), False)
+	log_message("Elements larger than the split: " + str(s_plus), False)
+	log_message("Elements equal to the split: " + str(s_equal), False)
 	
 	if l >= k:
-		log_messege("Look inside the smaller elements", False)
+		log_message("Look inside the smaller elements", False)
 		if print_mode == True:
 			print("     There are more than " + str(k) + " smaller values, so let's look inside that sub-list, s_minus")
 		return select(s_minus, k, print_mode)
 	elif l >= k - len(s_equal):
-		log_messege("The " + str(k) + "th element is: " + str(split), True)
+		log_message("The " + str(k) + "th element is: " + str(split), True)
 		if print_mode == True:
 			print("     There are " + str(l) + " smaller values, so it is the one we're looking for")
 		return split
 	else:
-		log_messege("Look inside the larger elements", False)
+		log_message("Look inside the larger elements", False)
 		if print_mode == True:
 			print("     There are than " + str(len(s_plus)) + " larger values, so let's look inside the other sub-list, s_plus")
 		return select(s_plus,k-l-len(s_equal), print_mode)
 
 def quicksort(S,print_mode):
+    log_message("Begin quicksort function on " + str(S))
     if print_mode == True:
         print("We're using the result of our randomized median function to help us recursively sort the list " + str(S))
     n = len(S)
 #     print(n)
     if n == 1:
+        log_message("There is only one element in the list: " + str(S))
         if print_mode == True:
             print("    The list is only one element long, so no need to sort")
         return S
@@ -265,6 +267,7 @@ def quicksort(S,print_mode):
             temp_1.append(min_value)
 #             print(temp_1)
         S = temp_1
+        log_message("Less than 4 elemengs, sorted by minimums: " + str(S))
         return S
     else:
         s_minus = []
@@ -274,6 +277,7 @@ def quicksort(S,print_mode):
         midpoint = n//2 + 1
         # use the select function that we wrote for randomized median finding to get us to the right pivot point from the get-go
         split = select(S,midpoint, False)
+        log_message("Returning to the quicksort function, using " + str(split) + " as our split point", False)
         if print_mode == True:
             print("   The median is " + str(split))
 #         found = False
@@ -284,17 +288,26 @@ def quicksort(S,print_mode):
                 s_plus.append(i)
             elif i == split:
                 s_equal.append(i)
-            
+ 	
+        log_message("Elements smaller than the split: " + str(s_minus), False)
+        log_message("Elements larger than the split: " + str(s_plus), False)
+        log_message("Elements equal to the split: " + str(s_equal), False)
+				        		   
         if print_mode == True:
             print("    Recursively use this sorting method on any values less than " + str(split))
+        
+        log_message("Now sort the list of smaller elements", False)
         s_minus = quicksort(s_minus, print_mode)
         if print_mode == True:
             print("    Recursively use this sorting method on any values greater than " + str(split))
         s_plus = quicksort(s_plus, print_mode)
+        log_message("Now sort the list of larger elements", False)
+        s_minus = quicksort(s_minus, print_mode)
         
 #         print(s_minus)
 #         print(s_plus)
 #         print(s_equal)
+        log_message("Concatenate the resulting lists", False)
         if print_mode == True:
             print("    Concatenating together " + str(s_minus) + ", " + str(s_equal) + ", " + str(s_plus))
         sorted_list = list(s_minus)
@@ -305,6 +318,7 @@ def quicksort(S,print_mode):
 #         print(sorted_list)
         if print_mode == True:
              print("    The sorted result is " + str(sorted_list) + "\n")
+        log_message("The sorted result is " + str(sorted_list))
         return sorted_list
 
 ####################huffman#############

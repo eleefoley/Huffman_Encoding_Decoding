@@ -1,0 +1,123 @@
+2020-08-03 21:39:02	CS 430 Summer 2020 Final Project, Emma Foley
+
+	#####
+
+
+2020-08-03 21:39:02	Starting user prompts
+	User chose to  pick a function
+	User chose to randomly generate a list: [16, 5, 87, 10, 60, 63, 30, 97, 52, 69]
+	#####
+
+
+2020-08-03 21:39:15	Begin quicksort function on [16, 5, 87, 10, 60, 63, 30, 97, 52, 69]
+2020-08-03 21:39:15	Begin select function for randomized recursive finding of the 6th element of [16, 5, 87, 10, 60, 63, 30, 97, 52, 69]
+	The randomly selected split element is: 52
+	Elements smaller than the split: [16, 5, 10, 30]
+	Elements larger than the split: [87, 60, 63, 97, 69]
+	Elements equal to the split: [52]
+	Look inside the larger elements
+2020-08-03 21:39:15	Begin select function for randomized recursive finding of the 1th element of [87, 60, 63, 97, 69]
+	The randomly selected split element is: 87
+	Elements smaller than the split: [60, 63, 69]
+	Elements larger than the split: [97]
+	Elements equal to the split: [87]
+	Look inside the smaller elements
+2020-08-03 21:39:15	Begin select function for randomized recursive finding of the 1th element of [60, 63, 69]
+	The randomly selected split element is: 60
+	Elements smaller than the split: []
+	Elements larger than the split: [63, 69]
+	Elements equal to the split: [60]
+2020-08-03 21:39:15	The 1th element is: 60
+	Returning to the quicksort function, using 60 as our split point
+	Elements smaller than the split: [16, 5, 10, 30, 52]
+	Elements larger than the split: [87, 63, 97, 69]
+	Elements equal to the split: [60]
+	Now sort the list of smaller elements
+2020-08-03 21:39:15	Begin quicksort function on [16, 5, 10, 30, 52]
+2020-08-03 21:39:15	Begin select function for randomized recursive finding of the 3th element of [16, 5, 10, 30, 52]
+	The randomly selected split element is: 52
+	Elements smaller than the split: [16, 5, 10, 30]
+	Elements larger than the split: []
+	Elements equal to the split: [52]
+	Look inside the smaller elements
+2020-08-03 21:39:15	Begin select function for randomized recursive finding of the 3th element of [16, 5, 10, 30]
+	The randomly selected split element is: 10
+	Elements smaller than the split: [5]
+	Elements larger than the split: [16, 30]
+	Elements equal to the split: [10]
+	Look inside the larger elements
+2020-08-03 21:39:15	Begin select function for randomized recursive finding of the 1th element of [16, 30]
+	The randomly selected split element is: 16
+	Elements smaller than the split: []
+	Elements larger than the split: [30]
+	Elements equal to the split: [16]
+2020-08-03 21:39:15	The 1th element is: 16
+	Returning to the quicksort function, using 16 as our split point
+	Elements smaller than the split: [5, 10]
+	Elements larger than the split: [30, 52]
+	Elements equal to the split: [16]
+	Now sort the list of smaller elements
+2020-08-03 21:39:15	Begin quicksort function on [5, 10]
+2020-08-03 21:39:15	Less than 4 elemengs, sorted by minimums: [5, 10]
+2020-08-03 21:39:15	Begin quicksort function on [30, 52]
+2020-08-03 21:39:15	Less than 4 elemengs, sorted by minimums: [30, 52]
+	Now sort the list of larger elements
+2020-08-03 21:39:15	Begin quicksort function on [5, 10]
+2020-08-03 21:39:15	Less than 4 elemengs, sorted by minimums: [5, 10]
+	Concatenate the resulting lists
+2020-08-03 21:39:15	The sorted result is [5, 10, 16, 30, 52]
+2020-08-03 21:39:15	Begin quicksort function on [87, 63, 97, 69]
+2020-08-03 21:39:15	Begin select function for randomized recursive finding of the 3th element of [87, 63, 97, 69]
+	The randomly selected split element is: 87
+	Elements smaller than the split: [63, 69]
+	Elements larger than the split: [97]
+	Elements equal to the split: [87]
+2020-08-03 21:39:15	The 3th element is: 87
+	Returning to the quicksort function, using 87 as our split point
+	Elements smaller than the split: [63, 69]
+	Elements larger than the split: [97]
+	Elements equal to the split: [87]
+	Now sort the list of smaller elements
+2020-08-03 21:39:15	Begin quicksort function on [63, 69]
+2020-08-03 21:39:15	Less than 4 elemengs, sorted by minimums: [63, 69]
+2020-08-03 21:39:15	Begin quicksort function on [97]
+2020-08-03 21:39:15	There is only one element in the list: [97]
+	Now sort the list of larger elements
+2020-08-03 21:39:15	Begin quicksort function on [63, 69]
+2020-08-03 21:39:15	Less than 4 elemengs, sorted by minimums: [63, 69]
+	Concatenate the resulting lists
+2020-08-03 21:39:15	The sorted result is [63, 69, 87, 97]
+	Now sort the list of larger elements
+2020-08-03 21:39:15	Begin quicksort function on [5, 10, 16, 30, 52]
+2020-08-03 21:39:15	Begin select function for randomized recursive finding of the 3th element of [5, 10, 16, 30, 52]
+	The randomly selected split element is: 10
+	Elements smaller than the split: [5]
+	Elements larger than the split: [16, 30, 52]
+	Elements equal to the split: [10]
+	Look inside the larger elements
+2020-08-03 21:39:15	Begin select function for randomized recursive finding of the 1th element of [16, 30, 52]
+	The randomly selected split element is: 16
+	Elements smaller than the split: []
+	Elements larger than the split: [30, 52]
+	Elements equal to the split: [16]
+2020-08-03 21:39:15	The 1th element is: 16
+	Returning to the quicksort function, using 16 as our split point
+	Elements smaller than the split: [5, 10]
+	Elements larger than the split: [30, 52]
+	Elements equal to the split: [16]
+	Now sort the list of smaller elements
+2020-08-03 21:39:15	Begin quicksort function on [5, 10]
+2020-08-03 21:39:15	Less than 4 elemengs, sorted by minimums: [5, 10]
+2020-08-03 21:39:15	Begin quicksort function on [30, 52]
+2020-08-03 21:39:15	Less than 4 elemengs, sorted by minimums: [30, 52]
+	Now sort the list of larger elements
+2020-08-03 21:39:15	Begin quicksort function on [5, 10]
+2020-08-03 21:39:15	Less than 4 elemengs, sorted by minimums: [5, 10]
+	Concatenate the resulting lists
+2020-08-03 21:39:15	The sorted result is [5, 10, 16, 30, 52]
+	Concatenate the resulting lists
+2020-08-03 21:39:15	The sorted result is [5, 10, 16, 30, 52, 60, 63, 69, 87, 97]
+	#####
+
+
+2020-08-03 21:39:15	Exiting

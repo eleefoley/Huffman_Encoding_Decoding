@@ -1,3 +1,0 @@
-2020-08-03 20:07:57	logs/20200803_20.07.57.txt
-2020-08-03 20:07:57	Starting user prompts
-2020-08-03 20:07:59	User chose to exit the program
