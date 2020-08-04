@@ -26,6 +26,12 @@ This was written in a python virtual environment, running python 3.5.2
 The required packages are included in the requirements.txt and can be imported via:
 	'pip install -r requirements.txt'
 
+Output
+======
+This program prints to a timestamped text file in the 'logs' subdirectory.
+
+If you run this in test mode, search for "PASS" and (perhaps more importantly) "FAIL".  This tests the kth value finding and quicksort against the results of puthon's sort and find by index.
+
 Resources
 ========
 * Algorithm Design: Kleinberg & Tardos
