@@ -3,6 +3,7 @@ import random
 import pandas as pd
 from pathlib import Path
 from datetime import datetime
+import queue
 
 ####global variables#####
 log_filename = datetime.now().strftime("%Y%m%d_%H.%M.%S") + ".txt"
@@ -322,61 +323,79 @@ def quicksort(S,print_mode):
         return sorted_list
 
 ####################huffman#############
-class Node(object):
-    left = None
-    right = None
-    char = None
-    prefix_part = None
-    freq = 0
-    
-    def __init__(self,c,f):
-        self.char = c
-        self.freq = f
-    
-    def set_children(self,left_node,right_node):
-        self.left = left_node
-        self.right = right_node
-    
-    def set_prefix_part(self, n):
-        self.prefix_part = n
+class Node:
+    def __init__(self, freq, char = None, left = None, right = None):
+        self.left = left
+        self.right = right
+        self.freq = freq
+        self.char = char
         
     def __repr__(self):
-        return "%s - %s -- %s _ %s" % (self.char, self.freq, self.left, self.right)
-    
+        if len(self.char) == 1:
+            return "(%s : %s)" % (self.char, self.freq)
+        else:
+            return "(%s : %s)" % ("not leaf", self.freq)
+            
     def __cmp__(self,other_node):
         return cmp(self.freq, other_node.freq)
     
-    def insert(self, other_node):
-# Compare the new value with the parent node
-        if self.freq:
-            if other_node < self:
-               if self.left is None:
-                    self.left = other_node
-               else:
-                    self.left.insert(other_node)
-            elif other_node > self:
-                if self.right is None:
-                    self.right = other_node
-                else:
-                    self.right.insert(other_node)
-        else:
-            self = other_node
+    def __lt__(self,other_node):
+        if self.freq > other_node.freq:
+            return other_node
+        elif self.freq < other_node.freq:
+            return other_node
+        elif self.freq == other_node.freq:
+            if self.char > other_node.char:
+                return other_node
+            else:
+                return self
     
-    def print_tree(self,count = 1, pos = 'mid'):
-        if self.left:
-            self.left.print_tree(count + 2, 'left')
-#         print(' ' * count + str(self.char))
-        text = str(self.char)
-        if pos == 'mid':
-            print(text)
-        elif pos == 'left':
-            print(' ' * count + text)
-        elif pos == 'right':
-            print('| ' + text)
-        if self.right:
-            self.right.print_tree(count + 2, 'left')
+    def __gt__(self,other_node):
+        if self.freq > other_node.freq:
+            return other_node
+        elif self.freq < other_node.freq:
+            return other_node
+        elif self.freq == other_node.freq:
+            if self.char < other_node.char:
+                return other_node
+            else:
+                return self
             
+    def children(self):
+        return (self.left, self.right)
+    
+def print_tree(node):
+    if node.left:
+        print_tree(node.left)
+    print(node)
+    if node.right:
+        print_tree(node.right)
 
+def assign_code(node, prefix = [], code = {}):
+    if node.left is not None:
+        if len(node.left.char) == 1:
+            assign_code(node.left, prefix + [0],code)
+        else:
+            code[node.left] = prefix + [0]
+    if node.right is not None:
+        if len(node.right.char) == 1:
+            assign_code(node.right, prefix + [1],code)
+        else:
+            code[node.right] = prefix + [1]
+    return code
+
+def get_leftest(node):
+    while node.left is not None:
+#         print(node.left)
+        node = node.left
+    return node
+
+def get_rightest(node):
+    while node.right is not None:
+#         print(node.left)
+        node = node.right
+    return node
+    
 def textfile_to_str():
         file_name = 'pride_and_prejudice_ch_1.txt'
         file_to_open = Path("./algorithms_app/text/" + file_name)
@@ -390,95 +409,59 @@ def textfile_to_str():
 
 def str_to_count_df(text_string):
         char_df = pd.DataFrame(list(text_string), columns = ['char'])
-        grouped_df = char_df.groupby('char').size().reset_index(name = "freq").sort_values(by = ['freq', 'char'], ascending = False).reset_index()
+        grouped_df = char_df.groupby('char').size().reset_index(name = "freq").sort_values(by = ['freq', 'char'], ascending = False).reset_index(drop = True)
         print("Here are the most frequent characters in the file:\n")
         print(grouped_df.head())
         return grouped_df
 
-class Binary_Freq_Heap:
-    def __init__(self):
-        self.heap_list = [0]
-        self.current_size = 0
+def tree_from_table(count_df):
+    node_queue = queue.PriorityQueue()
+    log_message("Make a priority queue of nodes that consist of a character, frequency, and binary children", False)
+    for i, row in count_df.iterrows():
+    #     print(row['freq'])
+        new_node = Node(row['freq'], row['char'])
+        node_queue.put(new_node)
+
+    # while not node_queue.empty():
+    #     print(node_queue.get())
+
+    log_message("Remove the two least frequent characters from the queue, add their freqs and concat their characters.  Make a node of this with the two least frequent chars as right and left children respectively.  Repeat", False)
+    while node_queue.qsize() > 1:
+        left = node_queue.get()
+        #print(left)
+        right = node_queue.get()
+        #print(right)
         
-    def bubble_up(self,i):
-        while i // 2 > 0:
-          if self.heap_list[i] < self.heap_list[i // 2]:
-             temp_spot = self.heap_list[i // 2]
-             self.heap_list[i // 2] = self.heap_list[i]
-             self.heap_list[i] = temp_spot
-          i = i // 2
-
-    def insert(self,freq):
-        self.heap_list.append(freq)
-        self.current_size = self.current_size + 1
-        self.bubble_up(self.current_size)
-        
-    def bubble_down(self,i):
-        while (i * 2) <= self.current_size:
-            smallest = self.get_smallest_freq(i)
-            if self.heap_list[i] > self.heap_list[smallest]:
-                temp_spot = self.heap_list[i]
-                self.heap_list[i] = self.heap_list[smallest]
-                self.heap_list[smallest] = temp_spot
-            i = smallest
-        
-    def get_smallest_freq(self,i):
-        if i * 2 + 1 > self.current_size:
-            return i * 2
-        else:
-            if self.heap_list[i*2] < self.heap_list[i*2+1]:
-                return i * 2
-            else:
-                return i * 2 + 1
-
-    def delete_smallest(self):
-        deleted = self.heap_list[1]
-        self.heap_list[1] = self.heap_list[self.current_size]
-        self.current_size = self.current_size - 1
-        self.heap_list.pop()
-        self.bubble_down(1)
-        return deleted
-
-    def build_freq_heap(self,freq_list):
-        i = len(freq_list) // 2
-        self.current_size = len(freq_list)
-        self.heap_list = [0] + freq_list[:]
-        while (i > 0):
-            self.bubble_down(i)
-            i = i - 1
-
-def children(node_heap, position):
-    node_list = node_heap.heap_list
-    size = node_heap.current_size
-    if position > size - 1:
-       print("There is no node at this heap position", position)
-       return
-    else:
-       print("Parent", node_list[position])
-             
-    if (2*position+1) > size-1:
-        print("no children for this node")
-        return [None,None]
-    else:
-        print("Left Child",node_list[2*position+1])
-        if not((2*position+2) > size-1):
-           print("Right Child",node_list[2*position +2])
-    return [node_list[2*position+1],node_list[2*position +2]]
+        new_freq = left.freq + right.freq
+        new_char = left.char + right.char
+        new_node = Node(new_freq, new_char, left, right)
+    #     print(new_node)
+        node_queue.put(new_node)
+    
+    gotten = node_queue.get()
+    log_message("Get the root node: " + str(gotten)) 
+    return gotten
 
 def huffman():
-	data = textfile_to_str()
-	count_df = str_to_count_df(data)
+	print("Huffman coding the first chapter of Pride and Prejudice")
+	log_message(break_message, False)
+	log_message("Huffman coding the first chapter of Pride and Prejudice")
 	
-	node_queue = []
-	for i, row in count_df.iterrows():
-		new_node = Node(row['char'],row['freq'])
-		node_queue.append(new_node)
-
-	freq_heap = Binary_Freq_Heap()
-	freq_heap.build_freq_heap(list(count_df['freq']))
-
-	print(freq_heap.heap_list)
-
+	data = textfile_to_str()
+	
+	count_df = str_to_count_df(data)
+	log_message("The most frequently used characters are \n" + str(count_df.head()))
+	
+	node = tree_from_table(count_df)
+	
+	print("\nPrinting the tree\n")
+	log_message("Printing the tree", False)
+	print_tree(node)
+	
+	print("\nAssign the huffman codes")
+	log_message("Assign the Huffman codes")
+	print(assign_code(node))
+	
 ##########################functions used for testing#############3
 # given a lenght, generate a random 
 def random_unsorted_list(n, max_val):
