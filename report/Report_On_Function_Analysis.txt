@@ -19,7 +19,10 @@ Huffman
 
 Encoding
 --------
+It will take O(n) time to create nodes for each character and put them into a priority queue
 
+It will take O(n * log(n)) time to keep removing the two smallest nodes an adding back in a combined new node.
+ 
 Decoding
 --------
-
+Not done
